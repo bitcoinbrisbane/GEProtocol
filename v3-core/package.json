@@ -1,0 +1,61 @@
+{
+  "name": "@uniswap/v3-core",
+  "description": "🦄 Core smart contracts of Uniswap V3",
+  "license": "BUSL-1.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.0.1",
+  "homepage": "https://uniswap.org",
+  "keywords": [
+    "uniswap",
+    "core",
+    "v3"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Uniswap/uniswap-v3-core"
+  },
+  "files": [
+    "contracts/interfaces",
+    "contracts/libraries",
+    "artifacts/contracts/UniswapV3Factory.sol/UniswapV3Factory.json",
+    "artifacts/contracts/UniswapV3Pool.sol/UniswapV3Pool.json",
+    "artifacts/contracts/interfaces/**/*.json",
+    "!artifacts/contracts/interfaces/**/*.dbg.json"
+  ],
+  "engines": {
+    "node": "18.19.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.6",
+    "@nomicfoundation/hardhat-ignition": "^0.15.5",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.5",
+    "@nomicfoundation/hardhat-verify": "^2.0.8",
+    "@nomicfoundation/ignition-core": "^0.15.5",
+    "@types/chai": "4",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^20.14.12",
+    "chai": "4",
+    "decimal.js": "^10.2.1",
+    "ethers": "^6.13.2",
+    "mocha": "^6.2.2",
+    "mocha-chai-jest-snapshot": "^1.1.0",
+    "prettier": "^2.0.5",
+    "prettier-plugin-solidity": "^1.0.0-alpha.59",
+    "solhint": "^3.2.1",
+    "solhint-plugin-prettier": "^0.0.5",
+    "ts-generator": "^0.1.1",
+    "ts-node": "^10.9.2",
+    "typechain": "^4.0.0",
+    "typescript": "^5.5.4"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "hh:deploy:pool": "npx hardhat ignition deploy ignition/modules/UniswapV3PoolModule.ts --network sepolia"
+  },
+  "dependencies": {
+    "hardhat": "^2.22.6"
+  }
+}
