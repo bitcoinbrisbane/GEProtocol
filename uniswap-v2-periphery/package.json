@@ -1,0 +1,57 @@
+{
+  "name": "thegrandexchange",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:bitcoinbrisbane/thegrandexchange.git",
+  "author": "Lucas Cullen <lucas@bitcoinbrisbane.com.au>",
+  "license": "MIT",
+  "scripts": {
+    "hh:build": "hardhat compile",
+    "hh:compile": "hardhat compile",
+    "hh:test": "hardhat test",
+    "hh:node": "npx hardhat node",
+    "hh:deploy:tokena": "npx hardhat ignition deploy ./ignition/modules/TokenA.ts --network sepolia --verify",
+    "hh:deploy:tokenb": "npx hardhat ignition deploy ./ignition/modules/TokenB.ts --network sepolia --verify",
+    "hh:deploy:usdt": "npx hardhat ignition deploy ./ignition/modules/MockUSDT.ts --network hardhat",
+    "hh:deploy:weth": "npx hardhat ignition deploy ./ignition/modules/MockWeth.ts --network localhost",
+    "hh:deploy:factory": "npx hardhat ignition deploy ./ignition/modules/UniswapV2Factory.ts --network hardhat",
+    "hh:deploy:router": "npx hardhat ignition deploy ./ignition/modules/UniswapV2Router.ts --network hardhat",
+    "hh:deploy:usdt:sepolia": "npx hardhat ignition deploy ./ignition/modules/MockUSDT.ts --network sepolia --verify",
+    "hh:deploy:btc:sepolia": "npx hardhat ignition deploy ./ignition/modules/MockwBTC.ts --network sepolia --verify",
+    "hh:deploy:weth:sepolia": "npx hardhat ignition deploy ./ignition/modules/MockWeth.ts --network sepolia --verify",
+    "hh:deploy:factory:sepolia": "npx hardhat ignition deploy ./ignition/modules/UniswapV2Factory.ts --network sepolia --verify",
+    "hh:deploy:router:sepolia": "npx hardhat ignition deploy ./ignition/modules/UniswapV2Router.ts --network sepolia --verify",
+    "hh:verify": "npx hardhat verify --network localhost"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-ignition": "^0.15.0",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "@types/node": ">=18.0.0",
+    "chai": "^4.2.0",
+    "ethers": "5.7",
+    "hardhat": "^2.22.5",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.0",
+    "ts-node": ">=8.0.0",
+    "typechain": "^8.3.0",
+    "typescript": ">=4.5.0"
+  },
+  "engines": {
+    "node": "20.12.2"
+  },
+  "dependencies": {
+    "@uniswap/lib": "^4.0.1-alpha",
+    "@uniswap/v2-core": "^1.0.1",
+    "bignumber.js": "^9.1.2",
+    "dotenv": "^16.4.5"
+  }
+}
