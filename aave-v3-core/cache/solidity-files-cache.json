@@ -1,0 +1,5842 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/chainlink/AggregatorInterface.sol": {
+      "lastModificationDate": 1722896176656,
+      "contentHash": "8716b85a61d64731fae341dd17c1afca",
+      "sourceName": "contracts/dependencies/chainlink/AggregatorInterface.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AggregatorInterface"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/misc/AaveOracle.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "f01ec393b34fefb34cb9e7587388a940",
+      "sourceName": "contracts/misc/AaveOracle.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../dependencies/chainlink/AggregatorInterface.sol",
+        "../protocol/libraries/helpers/Errors.sol",
+        "../interfaces/IACLManager.sol",
+        "../interfaces/IPoolAddressesProvider.sol",
+        "../interfaces/IPriceOracleGetter.sol",
+        "../interfaces/IAaveOracle.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "AaveOracle"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/helpers/Errors.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "08db821099e42f8e6ee9733c98aa85cb",
+      "sourceName": "contracts/protocol/libraries/helpers/Errors.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Errors"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IACLManager.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "71acbaabeadae852c33a9571f776ce2d",
+      "sourceName": "contracts/interfaces/IACLManager.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IPoolAddressesProvider.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IACLManager"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IPoolAddressesProvider.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "75709782c90506d3ce968d5a6e06b900",
+      "sourceName": "contracts/interfaces/IPoolAddressesProvider.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IPoolAddressesProvider"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IPriceOracleGetter.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "d2c48bd31d439c83553c8eba7e73dfa9",
+      "sourceName": "contracts/interfaces/IPriceOracleGetter.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IPriceOracleGetter"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IAaveOracle.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "b0da85a2c869194b295d8eb6cb532f3b",
+      "sourceName": "contracts/interfaces/IAaveOracle.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IPriceOracleGetter.sol",
+        "./IPoolAddressesProvider.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAaveOracle"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/tokenization/base/IncentivizedERC20.sol": {
+      "lastModificationDate": 1722896176661,
+      "contentHash": "fa9bf74713c3f2c6dd3514a4011f4e61",
+      "sourceName": "contracts/protocol/tokenization/base/IncentivizedERC20.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../dependencies/openzeppelin/contracts/Context.sol",
+        "../../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../../../dependencies/openzeppelin/contracts/IERC20Detailed.sol",
+        "../../../dependencies/openzeppelin/contracts/SafeCast.sol",
+        "../../libraries/math/WadRayMath.sol",
+        "../../libraries/helpers/Errors.sol",
+        "../../../interfaces/IAaveIncentivesController.sol",
+        "../../../interfaces/IPoolAddressesProvider.sol",
+        "../../../interfaces/IPool.sol",
+        "../../../interfaces/IACLManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "IncentivizedERC20"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/contracts/Context.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "1f51877e264d32889be1abcc83cde60c",
+      "sourceName": "contracts/dependencies/openzeppelin/contracts/Context.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/contracts/IERC20.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "ca23b7c429c310a0837290e57cb08904",
+      "sourceName": "contracts/dependencies/openzeppelin/contracts/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/contracts/IERC20Detailed.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "ade8e7a76dc21866425c5a1cd3cc7f09",
+      "sourceName": "contracts/dependencies/openzeppelin/contracts/IERC20Detailed.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Detailed"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/contracts/SafeCast.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "8643c160191b12b06fb7ea0d52b922d7",
+      "sourceName": "contracts/dependencies/openzeppelin/contracts/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/math/WadRayMath.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "81607decdf76b2c019e1643de279e06e",
+      "sourceName": "contracts/protocol/libraries/math/WadRayMath.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "WadRayMath"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IAaveIncentivesController.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "0a73af078d7524f61e4e14826bca6cb1",
+      "sourceName": "contracts/interfaces/IAaveIncentivesController.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAaveIncentivesController"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IPool.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "e977debb0018eb26ecec353110d66696",
+      "sourceName": "contracts/interfaces/IPool.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IPoolAddressesProvider.sol",
+        "../protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IPool"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/types/DataTypes.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "5d70776caccb171510548c8c0279088e",
+      "sourceName": "contracts/protocol/libraries/types/DataTypes.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DataTypes"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/tokenization/base/MintableIncentivizedERC20.sol": {
+      "lastModificationDate": 1722896176661,
+      "contentHash": "ff71fe2dcad2a389c7276221a334d67b",
+      "sourceName": "contracts/protocol/tokenization/base/MintableIncentivizedERC20.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../interfaces/IAaveIncentivesController.sol",
+        "../../../interfaces/IPool.sol",
+        "./IncentivizedERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "MintableIncentivizedERC20"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/tokenization/base/ScaledBalanceTokenBase.sol": {
+      "lastModificationDate": 1722896176661,
+      "contentHash": "0169783323c2af98f63262440cdb6e06",
+      "sourceName": "contracts/protocol/tokenization/base/ScaledBalanceTokenBase.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../dependencies/openzeppelin/contracts/SafeCast.sol",
+        "../../libraries/helpers/Errors.sol",
+        "../../libraries/math/WadRayMath.sol",
+        "../../../interfaces/IPool.sol",
+        "../../../interfaces/IScaledBalanceToken.sol",
+        "./MintableIncentivizedERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "ScaledBalanceTokenBase"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IScaledBalanceToken.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "c919fdf9c7495c614242d33bf9bd3042",
+      "sourceName": "contracts/interfaces/IScaledBalanceToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IScaledBalanceToken"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "ebc53b8d21ddab221633cd83ffddee86",
+      "sourceName": "contracts/protocol/libraries/logic/ValidationLogic.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../../../dependencies/openzeppelin/contracts/Address.sol",
+        "../../../dependencies/gnosis/contracts/GPv2SafeERC20.sol",
+        "../../../interfaces/IReserveInterestRateStrategy.sol",
+        "../../../interfaces/IStableDebtToken.sol",
+        "../../../interfaces/IScaledBalanceToken.sol",
+        "../../../interfaces/IPriceOracleGetter.sol",
+        "../../../interfaces/IAToken.sol",
+        "../../../interfaces/IPriceOracleSentinel.sol",
+        "../../../interfaces/IPoolAddressesProvider.sol",
+        "../../../dependencies/openzeppelin/contracts/IAccessControl.sol",
+        "../configuration/ReserveConfiguration.sol",
+        "../configuration/UserConfiguration.sol",
+        "../helpers/Errors.sol",
+        "../math/WadRayMath.sol",
+        "../math/PercentageMath.sol",
+        "../types/DataTypes.sol",
+        "./ReserveLogic.sol",
+        "./GenericLogic.sol",
+        "../../../dependencies/openzeppelin/contracts/SafeCast.sol",
+        "../../tokenization/base/IncentivizedERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "ValidationLogic"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/contracts/Address.sol": {
+      "lastModificationDate": 1722896176656,
+      "contentHash": "985991cfcb23df3c17fb00c5a11c7517",
+      "sourceName": "contracts/dependencies/openzeppelin/contracts/Address.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/gnosis/contracts/GPv2SafeERC20.sol": {
+      "lastModificationDate": 1722896176656,
+      "contentHash": "c40bed51822bbef100af0147f9a7b84f",
+      "sourceName": "contracts/dependencies/gnosis/contracts/GPv2SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../openzeppelin/contracts/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GPv2SafeERC20"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IReserveInterestRateStrategy.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "5e9d58f04a9dcc85ca7d94bdf579e5ef",
+      "sourceName": "contracts/interfaces/IReserveInterestRateStrategy.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IReserveInterestRateStrategy"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IStableDebtToken.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "0b744fc8daa069a3273b3cfa97d38ee2",
+      "sourceName": "contracts/interfaces/IStableDebtToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IInitializableDebtToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IStableDebtToken"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IAToken.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "e193bc747d54959104f85fede94054ce",
+      "sourceName": "contracts/interfaces/IAToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../dependencies/openzeppelin/contracts/IERC20.sol",
+        "./IScaledBalanceToken.sol",
+        "./IInitializableAToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAToken"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IPriceOracleSentinel.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "3a66ad3583c49980faeed0e372264d36",
+      "sourceName": "contracts/interfaces/IPriceOracleSentinel.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IPoolAddressesProvider.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IPriceOracleSentinel"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/contracts/IAccessControl.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "37c7ec9dfe521cb3ae05397dc7d5ebb7",
+      "sourceName": "contracts/dependencies/openzeppelin/contracts/IAccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAccessControl"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "c605d9fb7794479dd57e93ba2ee9c897",
+      "sourceName": "contracts/protocol/libraries/configuration/ReserveConfiguration.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../helpers/Errors.sol",
+        "../types/DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReserveConfiguration"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/configuration/UserConfiguration.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "5170e8b9558f1890a0c8b70e42ca9ce6",
+      "sourceName": "contracts/protocol/libraries/configuration/UserConfiguration.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../helpers/Errors.sol",
+        "../types/DataTypes.sol",
+        "./ReserveConfiguration.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UserConfiguration"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/math/PercentageMath.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "05801b395d699c0c135807c38334f8b7",
+      "sourceName": "contracts/protocol/libraries/math/PercentageMath.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PercentageMath"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "3a599938c4fc8b27c9c015b4ec299c44",
+      "sourceName": "contracts/protocol/libraries/logic/ReserveLogic.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../../../dependencies/gnosis/contracts/GPv2SafeERC20.sol",
+        "../../../interfaces/IStableDebtToken.sol",
+        "../../../interfaces/IVariableDebtToken.sol",
+        "../../../interfaces/IReserveInterestRateStrategy.sol",
+        "../configuration/ReserveConfiguration.sol",
+        "../math/MathUtils.sol",
+        "../math/WadRayMath.sol",
+        "../math/PercentageMath.sol",
+        "../helpers/Errors.sol",
+        "../types/DataTypes.sol",
+        "../../../dependencies/openzeppelin/contracts/SafeCast.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "ReserveLogic"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/logic/GenericLogic.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "98013b537f99eaa5467bb1cdd9b7cffe",
+      "sourceName": "contracts/protocol/libraries/logic/GenericLogic.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../../../interfaces/IScaledBalanceToken.sol",
+        "../../../interfaces/IPriceOracleGetter.sol",
+        "../configuration/ReserveConfiguration.sol",
+        "../configuration/UserConfiguration.sol",
+        "../math/PercentageMath.sol",
+        "../math/WadRayMath.sol",
+        "../types/DataTypes.sol",
+        "./ReserveLogic.sol",
+        "./EModeLogic.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "GenericLogic"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IInitializableDebtToken.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "86c2f027b96006b840048df4408b1583",
+      "sourceName": "contracts/interfaces/IInitializableDebtToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IAaveIncentivesController.sol",
+        "./IPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IInitializableDebtToken"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IInitializableAToken.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "142cbb79869294332b570db58db9b4ce",
+      "sourceName": "contracts/interfaces/IInitializableAToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IAaveIncentivesController.sol",
+        "./IPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IInitializableAToken"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IVariableDebtToken.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "12e7a357e1b2ba7ab2021edaa959cbdf",
+      "sourceName": "contracts/interfaces/IVariableDebtToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IScaledBalanceToken.sol",
+        "./IInitializableDebtToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IVariableDebtToken"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/math/MathUtils.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "3771d5fd7258e582cdc39ff6322687e2",
+      "sourceName": "contracts/protocol/libraries/math/MathUtils.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./WadRayMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MathUtils"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/logic/EModeLogic.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "03f74c2c369b0510754cb7a981cc63f4",
+      "sourceName": "contracts/protocol/libraries/logic/EModeLogic.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../dependencies/gnosis/contracts/GPv2SafeERC20.sol",
+        "../../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../../../interfaces/IPriceOracleGetter.sol",
+        "../configuration/UserConfiguration.sol",
+        "../helpers/Errors.sol",
+        "../math/WadRayMath.sol",
+        "../math/PercentageMath.sol",
+        "../types/DataTypes.sol",
+        "./ValidationLogic.sol",
+        "./ReserveLogic.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "EModeLogic"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/tokenization/VariableDebtToken.sol": {
+      "lastModificationDate": 1722896176661,
+      "contentHash": "6e1ef4f4ab562c3c1047b5a1611c2975",
+      "sourceName": "contracts/protocol/tokenization/VariableDebtToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../../dependencies/openzeppelin/contracts/SafeCast.sol",
+        "../libraries/aave-upgradeability/VersionedInitializable.sol",
+        "../libraries/math/WadRayMath.sol",
+        "../libraries/helpers/Errors.sol",
+        "../../interfaces/IPool.sol",
+        "../../interfaces/IAaveIncentivesController.sol",
+        "../../interfaces/IInitializableDebtToken.sol",
+        "../../interfaces/IVariableDebtToken.sol",
+        "./base/EIP712Base.sol",
+        "./base/DebtTokenBase.sol",
+        "./base/ScaledBalanceTokenBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "VariableDebtToken"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/VersionedInitializable.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "88d712420dc945ef4df1d64b02b434df",
+      "sourceName": "contracts/protocol/libraries/aave-upgradeability/VersionedInitializable.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "VersionedInitializable"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/tokenization/base/EIP712Base.sol": {
+      "lastModificationDate": 1722896176661,
+      "contentHash": "05a67ddf54cdb18b58f2de1e63cd2091",
+      "sourceName": "contracts/protocol/tokenization/base/EIP712Base.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "EIP712Base"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/tokenization/base/DebtTokenBase.sol": {
+      "lastModificationDate": 1722896176661,
+      "contentHash": "c6e2137f996cd67a1fb9ec759154c68d",
+      "sourceName": "contracts/protocol/tokenization/base/DebtTokenBase.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../dependencies/openzeppelin/contracts/Context.sol",
+        "../../libraries/helpers/Errors.sol",
+        "../../libraries/aave-upgradeability/VersionedInitializable.sol",
+        "../../../interfaces/ICreditDelegationToken.sol",
+        "./EIP712Base.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "DebtTokenBase"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/ICreditDelegationToken.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "2b2cca3bd9a013158caa18818c2f5547",
+      "sourceName": "contracts/interfaces/ICreditDelegationToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ICreditDelegationToken"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/tokenization/StableDebtToken.sol": {
+      "lastModificationDate": 1722896176661,
+      "contentHash": "96b06e610d5d0d827a1efbf2007b9d0a",
+      "sourceName": "contracts/protocol/tokenization/StableDebtToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../libraries/aave-upgradeability/VersionedInitializable.sol",
+        "../libraries/math/MathUtils.sol",
+        "../libraries/math/WadRayMath.sol",
+        "../libraries/helpers/Errors.sol",
+        "../../interfaces/IAaveIncentivesController.sol",
+        "../../interfaces/IInitializableDebtToken.sol",
+        "../../interfaces/IStableDebtToken.sol",
+        "../../interfaces/IPool.sol",
+        "./base/EIP712Base.sol",
+        "./base/DebtTokenBase.sol",
+        "./base/IncentivizedERC20.sol",
+        "../../dependencies/openzeppelin/contracts/SafeCast.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "StableDebtToken"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/tokenization/DelegationAwareAToken.sol": {
+      "lastModificationDate": 1722896176661,
+      "contentHash": "0f9b1b94e6716baf97220e9ea3b58741",
+      "sourceName": "contracts/protocol/tokenization/DelegationAwareAToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/IPool.sol",
+        "../../interfaces/IDelegationToken.sol",
+        "./AToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "DelegationAwareAToken"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IDelegationToken.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "c03502ee6f41587e255264a5119d612d",
+      "sourceName": "contracts/interfaces/IDelegationToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IDelegationToken"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/tokenization/AToken.sol": {
+      "lastModificationDate": 1722896176661,
+      "contentHash": "97a42f7e69fb0f68dfaead0811ec5bcf",
+      "sourceName": "contracts/protocol/tokenization/AToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../../dependencies/gnosis/contracts/GPv2SafeERC20.sol",
+        "../../dependencies/openzeppelin/contracts/SafeCast.sol",
+        "../libraries/aave-upgradeability/VersionedInitializable.sol",
+        "../libraries/helpers/Errors.sol",
+        "../libraries/math/WadRayMath.sol",
+        "../../interfaces/IPool.sol",
+        "../../interfaces/IAToken.sol",
+        "../../interfaces/IAaveIncentivesController.sol",
+        "../../interfaces/IInitializableAToken.sol",
+        "./base/ScaledBalanceTokenBase.sol",
+        "./base/IncentivizedERC20.sol",
+        "./base/EIP712Base.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "AToken"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "6ea7ab4029cb066962cb2a529c94ba32",
+      "sourceName": "contracts/protocol/libraries/logic/ConfiguratorLogic.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../interfaces/IPool.sol",
+        "../../../interfaces/IInitializableAToken.sol",
+        "../../../interfaces/IInitializableDebtToken.sol",
+        "../aave-upgradeability/InitializableImmutableAdminUpgradeabilityProxy.sol",
+        "../configuration/ReserveConfiguration.sol",
+        "../types/DataTypes.sol",
+        "../types/ConfiguratorInputTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "ConfiguratorLogic"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/InitializableImmutableAdminUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "4911372438b660b6f50e6049a4177602",
+      "sourceName": "contracts/protocol/libraries/aave-upgradeability/InitializableImmutableAdminUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../dependencies/openzeppelin/upgradeability/InitializableUpgradeabilityProxy.sol",
+        "../../../dependencies/openzeppelin/upgradeability/Proxy.sol",
+        "./BaseImmutableAdminUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "InitializableImmutableAdminUpgradeabilityProxy"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/types/ConfiguratorInputTypes.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "e4014474cee13fc8539db822a40ef359",
+      "sourceName": "contracts/protocol/libraries/types/ConfiguratorInputTypes.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ConfiguratorInputTypes"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/InitializableUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "39bda0a2e260a27fc2a95e54a2481588",
+      "sourceName": "contracts/dependencies/openzeppelin/upgradeability/InitializableUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./BaseUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "InitializableUpgradeabilityProxy"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/Proxy.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "a91bbbcd0a28f283241ad61c13c4468e",
+      "sourceName": "contracts/dependencies/openzeppelin/upgradeability/Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "744746f36caa160be3bcee24e182ca3f",
+      "sourceName": "contracts/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../dependencies/openzeppelin/upgradeability/BaseUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BaseImmutableAdminUpgradeabilityProxy"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/BaseUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "8333b2117e2d6b08512b50ff031192f1",
+      "sourceName": "contracts/dependencies/openzeppelin/upgradeability/BaseUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Proxy.sol",
+        "../contracts/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BaseUpgradeabilityProxy"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/pool/PoolConfigurator.sol": {
+      "lastModificationDate": 1722896176661,
+      "contentHash": "7d89c9b86a8642828bb0df0c18a01fef",
+      "sourceName": "contracts/protocol/pool/PoolConfigurator.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/aave-upgradeability/VersionedInitializable.sol",
+        "../libraries/configuration/ReserveConfiguration.sol",
+        "../../interfaces/IPoolAddressesProvider.sol",
+        "../libraries/helpers/Errors.sol",
+        "../libraries/math/PercentageMath.sol",
+        "../libraries/types/DataTypes.sol",
+        "../libraries/logic/ConfiguratorLogic.sol",
+        "../libraries/types/ConfiguratorInputTypes.sol",
+        "../../interfaces/IPoolConfigurator.sol",
+        "../../interfaces/IPool.sol",
+        "../../interfaces/IACLManager.sol",
+        "../../interfaces/IPoolDataProvider.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "PoolConfigurator"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IPoolConfigurator.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "1ed6e1553e4967acaae01c9202c27b5e",
+      "sourceName": "contracts/interfaces/IPoolConfigurator.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../protocol/libraries/types/ConfiguratorInputTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IPoolConfigurator"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IPoolDataProvider.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "aa6bc17e17b8498144a6afb1df52944c",
+      "sourceName": "contracts/interfaces/IPoolDataProvider.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IPoolAddressesProvider.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IPoolDataProvider"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/misc/AaveProtocolDataProvider.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "9438dd3b0b2d8c0afe85efcebd2a92cb",
+      "sourceName": "contracts/misc/AaveProtocolDataProvider.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../dependencies/openzeppelin/contracts/IERC20Detailed.sol",
+        "../protocol/libraries/configuration/ReserveConfiguration.sol",
+        "../protocol/libraries/configuration/UserConfiguration.sol",
+        "../protocol/libraries/types/DataTypes.sol",
+        "../protocol/libraries/math/WadRayMath.sol",
+        "../interfaces/IPoolAddressesProvider.sol",
+        "../interfaces/IStableDebtToken.sol",
+        "../interfaces/IVariableDebtToken.sol",
+        "../interfaces/IPool.sol",
+        "../interfaces/IPoolDataProvider.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "AaveProtocolDataProvider"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/pool/PoolStorage.sol": {
+      "lastModificationDate": 1722896176661,
+      "contentHash": "2aab4b4dc0b9e21f5f7eeaf46f349b30",
+      "sourceName": "contracts/protocol/pool/PoolStorage.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/configuration/UserConfiguration.sol",
+        "../libraries/configuration/ReserveConfiguration.sol",
+        "../libraries/logic/ReserveLogic.sol",
+        "../libraries/types/DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "PoolStorage"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/pool/Pool.sol": {
+      "lastModificationDate": 1722896176661,
+      "contentHash": "e6e91ca4b1c77dd3b60c15ad1b4e764a",
+      "sourceName": "contracts/protocol/pool/Pool.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/aave-upgradeability/VersionedInitializable.sol",
+        "../libraries/helpers/Errors.sol",
+        "../libraries/configuration/ReserveConfiguration.sol",
+        "../libraries/logic/PoolLogic.sol",
+        "../libraries/logic/ReserveLogic.sol",
+        "../libraries/logic/EModeLogic.sol",
+        "../libraries/logic/SupplyLogic.sol",
+        "../libraries/logic/FlashLoanLogic.sol",
+        "../libraries/logic/BorrowLogic.sol",
+        "../libraries/logic/LiquidationLogic.sol",
+        "../libraries/types/DataTypes.sol",
+        "../libraries/logic/BridgeLogic.sol",
+        "../../interfaces/IERC20WithPermit.sol",
+        "../../interfaces/IPoolAddressesProvider.sol",
+        "../../interfaces/IPool.sol",
+        "../../interfaces/IACLManager.sol",
+        "./PoolStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "Pool"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/logic/PoolLogic.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "8e4e639f57494f9d5728b8872e40b978",
+      "sourceName": "contracts/protocol/libraries/logic/PoolLogic.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../dependencies/gnosis/contracts/GPv2SafeERC20.sol",
+        "../../../dependencies/openzeppelin/contracts/Address.sol",
+        "../../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../../../interfaces/IAToken.sol",
+        "../configuration/ReserveConfiguration.sol",
+        "../helpers/Errors.sol",
+        "../math/WadRayMath.sol",
+        "../types/DataTypes.sol",
+        "./ReserveLogic.sol",
+        "./ValidationLogic.sol",
+        "./GenericLogic.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "PoolLogic"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/logic/SupplyLogic.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "340a50761ea79d01a5bbdfc6b5329067",
+      "sourceName": "contracts/protocol/libraries/logic/SupplyLogic.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../../../dependencies/gnosis/contracts/GPv2SafeERC20.sol",
+        "../../../interfaces/IAToken.sol",
+        "../helpers/Errors.sol",
+        "../configuration/UserConfiguration.sol",
+        "../types/DataTypes.sol",
+        "../math/WadRayMath.sol",
+        "../math/PercentageMath.sol",
+        "./ValidationLogic.sol",
+        "./ReserveLogic.sol",
+        "../configuration/ReserveConfiguration.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "SupplyLogic"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/logic/FlashLoanLogic.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "92a42750d3e1c350c5992f96f315112a",
+      "sourceName": "contracts/protocol/libraries/logic/FlashLoanLogic.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../dependencies/gnosis/contracts/GPv2SafeERC20.sol",
+        "../../../dependencies/openzeppelin/contracts/SafeCast.sol",
+        "../../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../../../interfaces/IAToken.sol",
+        "../../../flashloan/interfaces/IFlashLoanReceiver.sol",
+        "../../../flashloan/interfaces/IFlashLoanSimpleReceiver.sol",
+        "../../../interfaces/IPoolAddressesProvider.sol",
+        "../configuration/UserConfiguration.sol",
+        "../configuration/ReserveConfiguration.sol",
+        "../helpers/Errors.sol",
+        "../math/WadRayMath.sol",
+        "../math/PercentageMath.sol",
+        "../types/DataTypes.sol",
+        "./ValidationLogic.sol",
+        "./BorrowLogic.sol",
+        "./ReserveLogic.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "FlashLoanLogic"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/logic/BorrowLogic.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "62639307a2701e42d456f0c719611f95",
+      "sourceName": "contracts/protocol/libraries/logic/BorrowLogic.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../dependencies/gnosis/contracts/GPv2SafeERC20.sol",
+        "../../../dependencies/openzeppelin/contracts/SafeCast.sol",
+        "../../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../../../interfaces/IStableDebtToken.sol",
+        "../../../interfaces/IVariableDebtToken.sol",
+        "../../../interfaces/IAToken.sol",
+        "../configuration/UserConfiguration.sol",
+        "../configuration/ReserveConfiguration.sol",
+        "../helpers/Helpers.sol",
+        "../types/DataTypes.sol",
+        "./ValidationLogic.sol",
+        "./ReserveLogic.sol",
+        "./IsolationModeLogic.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "BorrowLogic"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/logic/LiquidationLogic.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "df8bbf610973b3ed1cc152fe2d5058d1",
+      "sourceName": "contracts/protocol/libraries/logic/LiquidationLogic.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../dependencies/openzeppelin/contracts//IERC20.sol",
+        "../../../dependencies/gnosis/contracts/GPv2SafeERC20.sol",
+        "../../libraries/math/PercentageMath.sol",
+        "../../libraries/math/WadRayMath.sol",
+        "../../libraries/helpers/Helpers.sol",
+        "../../libraries/types/DataTypes.sol",
+        "./ReserveLogic.sol",
+        "./ValidationLogic.sol",
+        "./GenericLogic.sol",
+        "./IsolationModeLogic.sol",
+        "./EModeLogic.sol",
+        "../../libraries/configuration/UserConfiguration.sol",
+        "../../libraries/configuration/ReserveConfiguration.sol",
+        "../../../interfaces/IAToken.sol",
+        "../../../interfaces/IStableDebtToken.sol",
+        "../../../interfaces/IVariableDebtToken.sol",
+        "../../../interfaces/IPriceOracleGetter.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "LiquidationLogic"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/logic/BridgeLogic.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "a443086bfd6de81dfacca7e85de63195",
+      "sourceName": "contracts/protocol/libraries/logic/BridgeLogic.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../../../dependencies/gnosis/contracts/GPv2SafeERC20.sol",
+        "../../../dependencies/openzeppelin/contracts/SafeCast.sol",
+        "../../../interfaces/IAToken.sol",
+        "../types/DataTypes.sol",
+        "../configuration/UserConfiguration.sol",
+        "../configuration/ReserveConfiguration.sol",
+        "../math/WadRayMath.sol",
+        "../math/PercentageMath.sol",
+        "../helpers/Errors.sol",
+        "./ValidationLogic.sol",
+        "./ReserveLogic.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "BridgeLogic"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IERC20WithPermit.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "fb108434860b227d662fe3a9ad7c1762",
+      "sourceName": "contracts/interfaces/IERC20WithPermit.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../dependencies/openzeppelin/contracts/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20WithPermit"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/flashloan/interfaces/IFlashLoanReceiver.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "b5a370abf3464cd07a78d6a9ded0a975",
+      "sourceName": "contracts/flashloan/interfaces/IFlashLoanReceiver.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/IPoolAddressesProvider.sol",
+        "../../interfaces/IPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IFlashLoanReceiver"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "c12a597070a8323c6fbdc09e5322c2e2",
+      "sourceName": "contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/IPoolAddressesProvider.sol",
+        "../../interfaces/IPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IFlashLoanSimpleReceiver"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/helpers/Helpers.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "f7f3dade227ab75868e74d3fd7326a14",
+      "sourceName": "contracts/protocol/libraries/helpers/Helpers.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../types/DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Helpers"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/logic/IsolationModeLogic.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "205e26e072c7f80baf11700725e8dc7b",
+      "sourceName": "contracts/protocol/libraries/logic/IsolationModeLogic.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../types/DataTypes.sol",
+        "../configuration/ReserveConfiguration.sol",
+        "../configuration/UserConfiguration.sol",
+        "../../../dependencies/openzeppelin/contracts/SafeCast.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "IsolationModeLogic"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/configuration/PriceOracleSentinel.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "62c3f9faf33d2c955542b474d76786ae",
+      "sourceName": "contracts/protocol/configuration/PriceOracleSentinel.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/helpers/Errors.sol",
+        "../../interfaces/IPoolAddressesProvider.sol",
+        "../../interfaces/IPriceOracleSentinel.sol",
+        "../../interfaces/ISequencerOracle.sol",
+        "../../interfaces/IACLManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "PriceOracleSentinel"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/ISequencerOracle.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "985e947b231254c70507c0b40d28b846",
+      "sourceName": "contracts/interfaces/ISequencerOracle.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ISequencerOracle"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/oracle/SequencerOracle.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "ec250b5b56d4b3fe83f27a4a6163bd16",
+      "sourceName": "contracts/mocks/oracle/SequencerOracle.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../dependencies/openzeppelin/contracts/Ownable.sol",
+        "../../interfaces/ISequencerOracle.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SequencerOracle"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/contracts/Ownable.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "35556c02439d35e34a1d8b87e2e364dd",
+      "sourceName": "contracts/dependencies/openzeppelin/contracts/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/configuration/PoolAddressesProviderRegistry.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "00515b59710489fb2bbaf12c336a7864",
+      "sourceName": "contracts/protocol/configuration/PoolAddressesProviderRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../dependencies/openzeppelin/contracts/Ownable.sol",
+        "../libraries/helpers/Errors.sol",
+        "../../interfaces/IPoolAddressesProviderRegistry.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "PoolAddressesProviderRegistry"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IPoolAddressesProviderRegistry.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "34941def33e6fe5e976997e3d65900db",
+      "sourceName": "contracts/interfaces/IPoolAddressesProviderRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IPoolAddressesProviderRegistry"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/pool/DefaultReserveInterestRateStrategy.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "ad0668e7a6b120485ba3b23422975802",
+      "sourceName": "contracts/protocol/pool/DefaultReserveInterestRateStrategy.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../libraries/math/WadRayMath.sol",
+        "../libraries/math/PercentageMath.sol",
+        "../libraries/types/DataTypes.sol",
+        "../libraries/helpers/Errors.sol",
+        "../../interfaces/IDefaultInterestRateStrategy.sol",
+        "../../interfaces/IReserveInterestRateStrategy.sol",
+        "../../interfaces/IPoolAddressesProvider.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "DefaultReserveInterestRateStrategy"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IDefaultInterestRateStrategy.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "d8b251125c8a53e14eab9595defc89f9",
+      "sourceName": "contracts/interfaces/IDefaultInterestRateStrategy.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IReserveInterestRateStrategy.sol",
+        "./IPoolAddressesProvider.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IDefaultInterestRateStrategy"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/misc/ZeroReserveInterestRateStrategy.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "91fa4b892912bc9113527e6c47895ef8",
+      "sourceName": "contracts/misc/ZeroReserveInterestRateStrategy.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../protocol/libraries/types/DataTypes.sol",
+        "../interfaces/IDefaultInterestRateStrategy.sol",
+        "../interfaces/IReserveInterestRateStrategy.sol",
+        "../interfaces/IPoolAddressesProvider.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "ZeroReserveInterestRateStrategy"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/tests/MockReserveInterestRateStrategy.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "f2be9ad00e3f09a734e98db3db181395",
+      "sourceName": "contracts/mocks/tests/MockReserveInterestRateStrategy.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/IDefaultInterestRateStrategy.sol",
+        "../../interfaces/IPoolAddressesProvider.sol",
+        "../../protocol/libraries/math/WadRayMath.sol",
+        "../../protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockReserveInterestRateStrategy"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/tests/FlashloanAttacker.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "d88774b8ed364b0683a40ad9b9177fa3",
+      "sourceName": "contracts/mocks/tests/FlashloanAttacker.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../dependencies/openzeppelin/contracts/SafeMath.sol",
+        "../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../../dependencies/gnosis/contracts/GPv2SafeERC20.sol",
+        "../../dependencies/openzeppelin/contracts/SafeMath.sol",
+        "../../interfaces/IPoolAddressesProvider.sol",
+        "../../flashloan/base/FlashLoanSimpleReceiverBase.sol",
+        "../tokens/MintableERC20.sol",
+        "../../interfaces/IPool.sol",
+        "../../protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FlashloanAttacker"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/contracts/SafeMath.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "c8fe4f0942c8e6052d14ded19549c9f5",
+      "sourceName": "contracts/dependencies/openzeppelin/contracts/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "ca03c0e2c038384aeba6f6a69a46c54b",
+      "sourceName": "contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IFlashLoanSimpleReceiver.sol",
+        "../../interfaces/IPoolAddressesProvider.sol",
+        "../../interfaces/IPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FlashLoanSimpleReceiverBase"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/tokens/MintableERC20.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "fb07be23f9bc534b8b529391f1806d96",
+      "sourceName": "contracts/mocks/tokens/MintableERC20.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../dependencies/openzeppelin/contracts/ERC20.sol",
+        "../../interfaces/IERC20WithPermit.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MintableERC20"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/contracts/ERC20.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "5f2e9fb534dc6e4d55f6eb3ae9418808",
+      "sourceName": "contracts/dependencies/openzeppelin/contracts/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol",
+        "./IERC20.sol",
+        "./SafeMath.sol",
+        "./Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/tokens/MintableDelegationERC20.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "621a8abf2ef213d592e1bfd4ae7fa851",
+      "sourceName": "contracts/mocks/tokens/MintableDelegationERC20.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../dependencies/openzeppelin/contracts/ERC20.sol",
+        "../../interfaces/IDelegationToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MintableDelegationERC20"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/InitializableAdminUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "466bad315d6c19367165736eb8eddd37",
+      "sourceName": "contracts/dependencies/openzeppelin/upgradeability/InitializableAdminUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./BaseAdminUpgradeabilityProxy.sol",
+        "./InitializableUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "InitializableAdminUpgradeabilityProxy"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/BaseAdminUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "f4683936fe9312b176fd1fb26c85bc56",
+      "sourceName": "contracts/dependencies/openzeppelin/upgradeability/BaseAdminUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./UpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BaseAdminUpgradeabilityProxy"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/UpgradeabilityProxy.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "65994b07253745d8bf18a1a62015bfcf",
+      "sourceName": "contracts/dependencies/openzeppelin/upgradeability/UpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./BaseUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UpgradeabilityProxy"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/AdminUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "3471100ea6d0b49599653bf1c7bab8c1",
+      "sourceName": "contracts/dependencies/openzeppelin/upgradeability/AdminUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./BaseAdminUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AdminUpgradeabilityProxy"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/configuration/PoolAddressesProvider.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "43a0fed8f134d380cc31e06a9681fdd2",
+      "sourceName": "contracts/protocol/configuration/PoolAddressesProvider.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../dependencies/openzeppelin/contracts/Ownable.sol",
+        "../../interfaces/IPoolAddressesProvider.sol",
+        "../libraries/aave-upgradeability/InitializableImmutableAdminUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "PoolAddressesProvider"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/contracts/SafeERC20.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "50711200e90c81d5d6830e041e40b60f",
+      "sourceName": "contracts/dependencies/openzeppelin/contracts/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/flashloan/MockSimpleFlashLoanReceiver.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "8eb7a99a99e046ef6739455755d25d77",
+      "sourceName": "contracts/mocks/flashloan/MockSimpleFlashLoanReceiver.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../dependencies/openzeppelin/contracts/SafeMath.sol",
+        "../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../../dependencies/gnosis/contracts/GPv2SafeERC20.sol",
+        "../../dependencies/openzeppelin/contracts/SafeMath.sol",
+        "../../interfaces/IPoolAddressesProvider.sol",
+        "../../flashloan/base/FlashLoanSimpleReceiverBase.sol",
+        "../tokens/MintableERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockFlashLoanSimpleReceiver"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/flashloan/MockFlashLoanReceiver.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "6de6a68eb91cb611fa119c5fa57cd98b",
+      "sourceName": "contracts/mocks/flashloan/MockFlashLoanReceiver.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../dependencies/openzeppelin/contracts/IERC20.sol",
+        "../../dependencies/gnosis/contracts/GPv2SafeERC20.sol",
+        "../../interfaces/IPoolAddressesProvider.sol",
+        "../../flashloan/base/FlashLoanReceiverBase.sol",
+        "../tokens/MintableERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockFlashLoanReceiver"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/flashloan/base/FlashLoanReceiverBase.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "504fca974bec38dbe2100c822f5da2ca",
+      "sourceName": "contracts/flashloan/base/FlashLoanReceiverBase.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IFlashLoanReceiver.sol",
+        "../../interfaces/IPoolAddressesProvider.sol",
+        "../../interfaces/IPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FlashLoanReceiverBase"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/contracts/AccessControl.sol": {
+      "lastModificationDate": 1722896176656,
+      "contentHash": "9b924163803243d4ecd5e273e82e7c29",
+      "sourceName": "contracts/dependencies/openzeppelin/contracts/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControl.sol",
+        "./Context.sol",
+        "./Strings.sol",
+        "./ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/contracts/Strings.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "c74a2f651e896db080b76bd03451dde5",
+      "sourceName": "contracts/dependencies/openzeppelin/contracts/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/contracts/ERC165.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "ae614a6c67709fac8bb8e33ee0b57917",
+      "sourceName": "contracts/dependencies/openzeppelin/contracts/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/contracts/IERC165.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "b28a2393541524c384f7c07646363f76",
+      "sourceName": "contracts/dependencies/openzeppelin/contracts/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/configuration/ACLManager.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "748520e62c05c32b3b6043cce41f6851",
+      "sourceName": "contracts/protocol/configuration/ACLManager.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../dependencies/openzeppelin/contracts/AccessControl.sol",
+        "../../interfaces/IPoolAddressesProvider.sol",
+        "../../interfaces/IACLManager.sol",
+        "../libraries/helpers/Errors.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "ACLManager"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/helpers/MockIncentivesController.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "533d3622d610f8af3a2bc4d27a90735b",
+      "sourceName": "contracts/mocks/helpers/MockIncentivesController.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/IAaveIncentivesController.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockIncentivesController"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/helpers/MockReserveConfiguration.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "32681ff53dece59372a52b647c84f918",
+      "sourceName": "contracts/mocks/helpers/MockReserveConfiguration.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../protocol/libraries/configuration/ReserveConfiguration.sol",
+        "../../protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockReserveConfiguration"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/tests/WadRayMathWrapper.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "da3df304b238705768e62f73c1f3395b",
+      "sourceName": "contracts/mocks/tests/WadRayMathWrapper.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../protocol/libraries/math/WadRayMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "WadRayMathWrapper"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/deployments/ReservesSetupHelper.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "408e11ec0e9e2f5ae18446fba05a7687",
+      "sourceName": "contracts/deployments/ReservesSetupHelper.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../protocol/pool/PoolConfigurator.sol",
+        "../dependencies/openzeppelin/contracts/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReservesSetupHelper"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/upgradeability/MockInitializableImplementation.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "e88eda7ae10a49af02d15ad989436d0b",
+      "sourceName": "contracts/mocks/upgradeability/MockInitializableImplementation.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../protocol/libraries/aave-upgradeability/VersionedInitializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockInitializableFromConstructorImple",
+        "MockInitializableImple",
+        "MockInitializableImpleV2",
+        "MockReentrantInitializableImple"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/pool/L2Pool.sol": {
+      "lastModificationDate": 1722896176661,
+      "contentHash": "1f723b1d4d4caf8b324b5de58cbfeccb",
+      "sourceName": "contracts/protocol/pool/L2Pool.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Pool.sol",
+        "../../interfaces/IPoolAddressesProvider.sol",
+        "../../interfaces/IL2Pool.sol",
+        "../libraries/logic/CalldataLogic.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "L2Pool"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IL2Pool.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "72f00169685259a9490e793b6004c60d",
+      "sourceName": "contracts/interfaces/IL2Pool.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IL2Pool"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/protocol/libraries/logic/CalldataLogic.sol": {
+      "lastModificationDate": 1722896176660,
+      "contentHash": "f5779ba954815d53bfddb9dd5f06889c",
+      "sourceName": "contracts/protocol/libraries/logic/CalldataLogic.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "CalldataLogic"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/helpers/MockL2Pool.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "2c669941cb0609bcb14987b5bf14ea2f",
+      "sourceName": "contracts/mocks/helpers/MockL2Pool.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/IPoolAddressesProvider.sol",
+        "../../protocol/pool/L2Pool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockL2Pool"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/helpers/MockPool.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "0b055b3c4561774e5d3eb77416bb0375",
+      "sourceName": "contracts/mocks/helpers/MockPool.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/IPoolAddressesProvider.sol",
+        "../../protocol/pool/Pool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockPool",
+        "MockPoolInherited"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/misc/L2Encoder.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "af89f4954501953fc558ae4101c37482",
+      "sourceName": "contracts/misc/L2Encoder.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../dependencies/openzeppelin/contracts/SafeCast.sol",
+        "../interfaces/IPool.sol",
+        "../protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "L2Encoder"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/upgradeability/MockAToken.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "2443bd201bbc0357e19cd3e4ff7f8746",
+      "sourceName": "contracts/mocks/upgradeability/MockAToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../protocol/tokenization/AToken.sol",
+        "../../interfaces/IPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockAToken"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/tokens/MockATokenRepayment.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "896570850e142395a2d58426ad5f6d78",
+      "sourceName": "contracts/mocks/tokens/MockATokenRepayment.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../protocol/tokenization/AToken.sol",
+        "../../interfaces/IPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockATokenRepayment"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/upgradeability/MockVariableDebtToken.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "a21756d20a836259198559cb39f47082",
+      "sourceName": "contracts/mocks/upgradeability/MockVariableDebtToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../protocol/tokenization/VariableDebtToken.sol",
+        "../../interfaces/IPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockVariableDebtToken"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/upgradeability/MockStableDebtToken.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "02bf6e8bc24e9aa9023b681e68373dc6",
+      "sourceName": "contracts/mocks/upgradeability/MockStableDebtToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../protocol/tokenization/StableDebtToken.sol",
+        "../../interfaces/IPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockStableDebtToken"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/Initializable.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "e6f7f19c0dc8e820d3023ae2704fae4d",
+      "sourceName": "contracts/dependencies/openzeppelin/upgradeability/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/dependencies/weth/WETH9.sol": {
+      "lastModificationDate": 1722896176657,
+      "contentHash": "09cbd8f036307a4a04f8da33334e1393",
+      "sourceName": "contracts/dependencies/weth/WETH9.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "WETH9"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/tokens/WETH9Mocked.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "3a547db5bf7aaaeede930242de116a4b",
+      "sourceName": "contracts/mocks/tokens/WETH9Mocked.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../dependencies/weth/WETH9.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "WETH9Mocked"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/interfaces/IPriceOracle.sol": {
+      "lastModificationDate": 1722896176658,
+      "contentHash": "a4967c980480f1269c2979e03a86635e",
+      "sourceName": "contracts/interfaces/IPriceOracle.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IPriceOracle"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/oracle/PriceOracle.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "01a98c66770be5c7154e22d2618c9d8e",
+      "sourceName": "contracts/mocks/oracle/PriceOracle.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/IPriceOracle.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PriceOracle"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/misc/interfaces/IWETH.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "c3ba34f1bcc69745d6427ee0ae043c26",
+      "sourceName": "contracts/misc/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/helpers/MockPeripheryContract.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "c94867fb1e5875a09af8c93a4321b22b",
+      "sourceName": "contracts/mocks/helpers/MockPeripheryContract.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockPeripheryContractV1",
+        "MockPeripheryContractV2"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/helpers/SelfDestructTransfer.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "31ea6274458f9d2849d95adcd6465f44",
+      "sourceName": "contracts/mocks/helpers/SelfDestructTransfer.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SelfdestructTransfer"
+      ]
+    },
+    "/home/lucascullen/GitHub/BitcoinBrisbane/aave-v3-core/contracts/mocks/oracle/CLAggregators/MockAggregator.sol": {
+      "lastModificationDate": 1722896176659,
+      "contentHash": "4beffef38b7e901dfb237bd65166f918",
+      "sourceName": "contracts/mocks/oracle/CLAggregators/MockAggregator.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "evmVersion": "london",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockAggregator"
+      ]
+    }
+  }
+}
