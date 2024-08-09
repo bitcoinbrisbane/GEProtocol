@@ -1,0 +1,87 @@
+Function Importance and Execution Order
+
+Level 1: Core Operations
+-------------------------
+1. Constructor (Write Contract)
+   ├── Function: constructor
+   ├── Inputs: None
+   ├── Outputs: None
+   └── Description: Initializes the contract by setting the owner and default fee amounts with their corresponding tick spacings.
+
+2. createPool (Write Contract)
+   ├── Function: createPool
+   ├── Inputs:
+   │   ├── address tokenA
+   │   ├── address tokenB
+   │   ├── uint24 fee
+   ├── Outputs:
+   │   └── address pool
+   └── Description: Creates a new pool for the given tokens and fee amount. Deploys a new Uniswap V3 pool if one does not already exist for the given parameters.
+
+3. setOwner (Write Contract)
+   ├── Function: setOwner
+   ├── Inputs:
+   │   ├── address _owner
+   ├── Outputs: None
+   └── Description: Sets a new owner for the contract. Only callable by the current owner.
+
+4. enableFeeAmount (Write Contract)
+   ├── Function: enableFeeAmount
+   ├── Inputs:
+   │   ├── uint24 fee
+   │   ├── int24 tickSpacing
+   ├── Outputs: None
+   └── Description: Enables a fee amount with a specified tick spacing. Only callable by the owner and sets new fee configurations.
+
+Level 2: Data Retrieval and State Information
+------------------------------------------------
+5. owner (Read Contract)
+   ├── Function: owner
+   ├── Inputs: None
+   ├── Outputs:
+   │   └── address owner
+   └── Description: Retrieves the current owner of the contract.
+
+6. feeAmountTickSpacing (Read Contract)
+   ├── Function: feeAmountTickSpacing
+   ├── Inputs:
+   │   ├── uint24 fee
+   ├── Outputs:
+   │   └── int24 tickSpacing
+   └── Description: Returns the tick spacing for a given fee amount.
+
+7. getPool (Read Contract)
+   ├── Function: getPool
+   ├── Inputs:
+   │   ├── address tokenA
+   │   ├── address tokenB
+   │   ├── uint24 fee
+   ├── Outputs:
+   │   └── address pool
+   └── Description: Retrieves the address of the pool for given token addresses and fee amount.
+
+Level 3: Events
+---------------
+8. OwnerChanged (Event)
+   ├── Event: OwnerChanged
+   ├── Inputs:
+   │   ├── address oldOwner
+   │   └── address newOwner
+   └── Description: Emitted when the owner of the contract changes.
+
+9. FeeAmountEnabled (Event)
+   ├── Event: FeeAmountEnabled
+   ├── Inputs:
+   │   ├── uint24 fee
+   │   └── int24 tickSpacing
+   └── Description: Emitted when a fee amount is enabled with a specified tick spacing.
+
+10. PoolCreated (Event)
+    ├── Event: PoolCreated
+    ├── Inputs:
+    │   ├── address token0
+    │   ├── address token1
+    │   ├── uint24 fee
+    │   ├── int24 tickSpacing
+    │   └── address pool
+    └── Description: Emitted when a new pool is created with the given tokens and fee amount.

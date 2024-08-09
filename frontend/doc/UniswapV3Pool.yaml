@@ -1,0 +1,217 @@
+Function Importance and Execution Order
+
+Level 1: Core Operations
+-------------------------
+1. Constructor (Write Contract)
+   ├── Function: constructor
+   ├── Inputs: None
+   ├── Outputs: None
+   └── Description: Initializes the contract by setting the owner and default fee amounts with their corresponding tick spacings.
+
+2. burn (Write Contract)
+   ├── Function: burn
+   ├── Inputs:
+   │   ├── int24 tickLower
+   │   ├── int24 tickUpper
+   │   ├── uint128 amount
+   ├── Outputs:
+   │   └── uint256 amount0
+   │       uint256 amount1
+   └── Description: Burns liquidity from a specified tick range and returns the amounts of token0 and token1.
+
+3. collect (Write Contract)
+   ├── Function: collect
+   ├── Inputs:
+   │   ├── address recipient
+   │   ├── int24 tickLower
+   │   ├── int24 tickUpper
+   │   ├── uint128 amount0Requested
+   │   ├── uint128 amount1Requested
+   ├── Outputs:
+   │   └── uint128 amount0
+   │       uint128 amount1
+   └── Description: Collects fees from a specified tick range and returns the collected amounts of token0 and token1.
+
+4. collectProtocol (Write Contract)
+   ├── Function: collectProtocol
+   ├── Inputs:
+   │   ├── address recipient
+   │   ├── uint128 amount0Requested
+   │   ├── uint128 amount1Requested
+   ├── Outputs:
+   │   └── uint128 amount0
+   │       uint128 amount1
+   └── Description: Collects protocol fees and returns the collected amounts of token0 and token1.
+
+5. flash (Write Contract)
+   ├── Function: flash
+   ├── Inputs:
+   │   ├── address recipient
+   │   ├── uint256 amount0
+   │   ├── uint256 amount1
+   │   ├── bytes data
+   ├── Outputs: None
+   └── Description: Executes a flash loan with the specified amounts and data.
+
+6. increaseObservationCardinalityNext (Write Contract)
+   ├── Function: increaseObservationCardinalityNext
+   ├── Inputs:
+   │   ├── uint16 observationCardinalityNext
+   ├── Outputs: None
+   └── Description: Increases the observation cardinality for the next observations.
+
+7. initialize (Write Contract)
+   ├── Function: initialize
+   ├── Inputs:
+   │   ├── uint160 sqrtPriceX96
+   ├── Outputs: None
+   └── Description: Initializes the pool with the specified price.
+
+Level 2: Data Retrieval and State Information
+------------------------------------------------
+8. factory (Read Contract)
+   ├── Function: factory
+   ├── Inputs: None
+   ├── Outputs:
+   │   └── address
+   └── Description: Retrieves the address of the factory that created the pool.
+
+9. fee (Read Contract)
+   ├── Function: fee
+   ├── Inputs: None
+   ├── Outputs:
+   │   └── uint24
+   └── Description: Retrieves the current pool fee.
+
+10. feeGrowthGlobal0X128 (Read Contract)
+    ├── Function: feeGrowthGlobal0X128
+    ├── Inputs: None
+    ├── Outputs:
+    │   └── uint256
+    └── Description: Retrieves global fee growth for token0.
+
+11. feeGrowthGlobal1X128 (Read Contract)
+    ├── Function: feeGrowthGlobal1X128
+    ├── Inputs: None
+    ├── Outputs:
+    │   └── uint256
+    └── Description: Retrieves global fee growth for token1.
+
+12. liquidity (Read Contract)
+    ├── Function: liquidity
+    ├── Inputs: None
+    ├── Outputs:
+    │   └── uint128
+    └── Description: Retrieves the current liquidity in the pool.
+
+13. maxLiquidityPerTick (Read Contract)
+    ├── Function: maxLiquidityPerTick
+    ├── Inputs: None
+    ├── Outputs:
+    │   └── uint128
+    └── Description: Retrieves the maximum liquidity that can be provided in a single tick.
+
+14. token0 (Read Contract)
+    ├── Function: token0
+    ├── Inputs: None
+    ├── Outputs:
+    │   └── address
+    └── Description: Retrieves the address of token0.
+
+15. token1 (Read Contract)
+    ├── Function: token1
+    ├── Inputs: None
+    ├── Outputs:
+    │   └── address
+    └── Description: Retrieves the address of token1.
+
+Level 3: Events
+---------------
+16. Burn (Event)
+    ├── Event: Burn
+    ├── Inputs:
+    │   ├── address owner
+    │   ├── int24 tickLower
+    │   ├── int24 tickUpper
+    │   ├── uint128 amount
+    │   ├── uint256 amount0
+    │   └── uint256 amount1
+    └── Description: Emitted when liquidity is burned.
+
+17. Collect (Event)
+    ├── Event: Collect
+    ├── Inputs:
+    │   ├── address owner
+    │   ├── address recipient
+    │   ├── int24 tickLower
+    │   ├── int24 tickUpper
+    │   ├── uint128 amount0
+    │   └── uint128 amount1
+    └── Description: Emitted when fees are collected.
+
+18. CollectProtocol (Event)
+    ├── Event: CollectProtocol
+    ├── Inputs:
+    │   ├── address sender
+    │   ├── address recipient
+    │   ├── uint128 amount0
+    │   └── uint128 amount1
+    └── Description: Emitted when protocol fees are collected.
+
+19. Flash (Event)
+    ├── Event: Flash
+    ├── Inputs:
+    │   ├── address sender
+    │   ├── address recipient
+    │   ├── uint256 amount0
+    │   ├── uint256 amount1
+    │   ├── uint256 paid0
+    │   └── uint256 paid1
+    └── Description: Emitted when a flash loan is executed.
+
+20. IncreaseObservationCardinalityNext (Event)
+    ├── Event: IncreaseObservationCardinalityNext
+    ├── Inputs:
+    │   ├── uint16 observationCardinalityNextOld
+    │   └── uint16 observationCardinalityNextNew
+    └── Description: Emitted when the observation cardinality is increased.
+
+21. Initialize (Event)
+    ├── Event: Initialize
+    ├── Inputs:
+    │   ├── uint160 sqrtPriceX96
+    │   └── int24 tick
+    └── Description: Emitted when the pool is initialized.
+
+22. Mint (Event)
+    ├── Event: Mint
+    ├── Inputs:
+    │   ├── address sender
+    │   ├── address owner
+    │   ├── int24 tickLower
+    │   ├── int24 tickUpper
+    │   ├── uint128 amount
+    │   ├── uint256 amount0
+    │   └── uint256 amount1
+    └── Description: Emitted when liquidity is minted.
+
+23. SetFeeProtocol (Event)
+    ├── Event: SetFeeProtocol
+    ├── Inputs:
+    │   ├── uint8 feeProtocol0Old
+    │   ├── uint8 feeProtocol1Old
+    │   ├── uint8 feeProtocol0New
+    │   └── uint8 feeProtocol1New
+    └── Description: Emitted when the fee protocol is set.
+
+24. Swap (Event)
+    ├── Event: Swap
+    ├── Inputs:
+    │   ├── address sender
+    │   ├── address recipient
+    │   ├── int256 amount0
+    │   ├── int256 amount1
+    │   ├── uint160 sqrtPriceX96
+    │   ├── uint128 liquidity
+    │   └── int24 tick
+    └── Description: Emitted when a swap occurs.

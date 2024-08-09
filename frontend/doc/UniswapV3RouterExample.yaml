@@ -1,0 +1,81 @@
+# Example Data for UniswapV3Factory Contract Functions
+
+## 1. Constructor
+Function: constructor (Write Contract)
+Inputs: None
+Outputs: None
+Explanation: Initializes the contract. Sets the initial owner and default fee amounts with their respective tick spacings.
+
+## 2. createPool
+Function: createPool (Write Contract)
+Inputs:
+  - tokenA: 0xabcdefabcdefabcdefabcdefabcdefabcdefabcdef (Example tokenA address)
+  - tokenB: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example tokenB address)
+  - fee: 500 (Example fee amount)
+Outputs:
+  - pool: 0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef (Example pool address)
+Explanation: Creates a new pool for the given token addresses and fee. If successful, returns the address of the newly created pool.
+
+## 3. setOwner
+Function: setOwner (Write Contract)
+Inputs:
+  - _owner: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example new owner address)
+Outputs: None
+Explanation: Changes the contract owner to the new address specified. Only callable by the current owner.
+
+## 4. enableFeeAmount
+Function: enableFeeAmount (Write Contract)
+Inputs:
+  - fee: 10000 (Example fee amount)
+  - tickSpacing: 200 (Example tick spacing)
+Outputs: None
+Explanation: Enables a fee amount with the specified tick spacing. Only callable by the contract owner.
+
+## 5. owner
+Function: owner (Read Contract)
+Inputs: None
+Outputs:
+  - owner: 0xabcdefabcdefabcdefabcdefabcdefabcdefabcdef (Example owner address)
+Explanation: Returns the current owner of the contract.
+
+## 6. feeAmountTickSpacing
+Function: feeAmountTickSpacing (Read Contract)
+Inputs:
+  - fee: 500 (Example fee amount)
+Outputs:
+  - tickSpacing: 10 (Example tick spacing)
+Explanation: Retrieves the tick spacing for a given fee amount.
+
+## 7. getPool
+Function: getPool (Read Contract)
+Inputs:
+  - tokenA: 0xabcdefabcdefabcdefabcdefabcdefabcdefabcdef (Example tokenA address)
+  - tokenB: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example tokenB address)
+  - fee: 500 (Example fee amount)
+Outputs:
+  - pool: 0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef (Example pool address)
+Explanation: Returns the address of the pool for the given token addresses and fee amount.
+
+## 8. OwnerChanged
+Event: OwnerChanged
+Inputs:
+  - oldOwner: 0xabcdefabcdefabcdefabcdefabcdefabcdefabcdef (Previous owner address)
+  - newOwner: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (New owner address)
+Explanation: Emitted when the contract owner changes.
+
+## 9. FeeAmountEnabled
+Event: FeeAmountEnabled
+Inputs:
+  - fee: 10000 (Fee amount)
+  - tickSpacing: 200 (Tick spacing)
+Explanation: Emitted when a new fee amount is enabled with the specified tick spacing.
+
+## 10. PoolCreated
+Event: PoolCreated
+Inputs:
+  - token0: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Token0 address)
+  - token1: 0xabcdefabcdefabcdefabcdefabcdefabcdefabcdef (Token1 address)
+  - fee: 500 (Fee amount)
+  - tickSpacing: 10 (Tick spacing)
+  - pool: 0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef (Pool address)
+Explanation: Emitted when a new pool is created for the given token addresses and fee amount.

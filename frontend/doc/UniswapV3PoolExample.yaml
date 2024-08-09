@@ -1,0 +1,367 @@
+# Example Data for UniswapV3 Contract Functions
+
+## 1. Constructor
+Function: constructor (Write Contract)
+Inputs: None
+Outputs: None
+Explanation: Initializes the contract. Sets up the initial state with default parameters.
+
+## 2. burn
+Function: burn (Write Contract)
+Inputs:
+  - tickLower: -10000 (Example lower tick value)
+  - tickUpper: 10000 (Example upper tick value)
+  - amount: 500000000000000000 (Example amount of liquidity to burn)
+Outputs:
+  - amount0: 1000000000000000000 (Example amount of token0 burned)
+  - amount1: 2000000000000000000 (Example amount of token1 burned)
+Explanation: Burns liquidity within the specified tick range. Returns the amounts of token0 and token1 burned. 
+  Calculation Example:
+    - Amount burned for token0: 1,000,000,000,000,000,000 (1 ether)
+    - Amount burned for token1: 2,000,000,000,000,000,000 (2 ether)
+
+## 3. collect
+Function: collect (Write Contract)
+Inputs:
+  - recipient: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example recipient address)
+  - tickLower: -10000 (Example lower tick value)
+  - tickUpper: 10000 (Example upper tick value)
+  - amount0Requested: 1000000000000000000 (Example amount of token0 requested)
+  - amount1Requested: 2000000000000000000 (Example amount of token1 requested)
+Outputs:
+  - amount0: 1000000000000000000 (Example amount of token0 collected)
+  - amount1: 2000000000000000000 (Example amount of token1 collected)
+Explanation: Collects fees within the specified tick range. Returns the amounts of token0 and token1 collected.
+
+## 4. collectProtocol
+Function: collectProtocol (Write Contract)
+Inputs:
+  - recipient: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example recipient address)
+  - amount0Requested: 1000000000000000000 (Example amount of protocol fees for token0 requested)
+  - amount1Requested: 2000000000000000000 (Example amount of protocol fees for token1 requested)
+Outputs:
+  - amount0: 1000000000000000000 (Example amount of token0 protocol fees collected)
+  - amount1: 2000000000000000000 (Example amount of token1 protocol fees collected)
+Explanation: Collects protocol fees for token0 and token1. Returns the collected amounts.
+
+## 5. flash
+Function: flash (Write Contract)
+Inputs:
+  - recipient: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example recipient address)
+  - amount0: 1000000000000000000 (Example amount of token0 to flash)
+  - amount1: 2000000000000000000 (Example amount of token1 to flash)
+  - data: 0x (Example additional data)
+Outputs: None
+Explanation: Executes a flash loan with the specified amounts of token0 and token1. Returns no outputs.
+
+## 6. increaseObservationCardinalityNext
+Function: increaseObservationCardinalityNext (Write Contract)
+Inputs:
+  - observationCardinalityNext: 100 (Example new observation cardinality)
+Outputs: None
+Explanation: Increases the observation cardinality to the specified value. Returns no outputs.
+
+## 7. initialize
+Function: initialize (Write Contract)
+Inputs:
+  - sqrtPriceX96: 79228162514264337593543950336 (Example initial price in sqrtPriceX96 format)
+Outputs: None
+Explanation: Initializes the pool with the specified price. Returns no outputs.
+
+## 8. mint
+Function: mint (Write Contract)
+Inputs:
+  - recipient: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example recipient address)
+  - tickLower: -10000 (Example lower tick value)
+  - tickUpper: 10000 (Example upper tick value)
+  - amount: 500000000000000000 (Example amount of liquidity to mint)
+  - data: 0x (Example additional data)
+Outputs:
+  - amount0: 1000000000000000000 (Example amount of token0 minted)
+  - amount1: 2000000000000000000 (Example amount of token1 minted)
+Explanation: Mints liquidity within the specified tick range. Returns the amounts of token0 and token1 minted.
+
+## 9. setFeeProtocol
+Function: setFeeProtocol (Write Contract)
+Inputs:
+  - feeProtocol0: 1 (Example new fee protocol value for token0)
+  - feeProtocol1: 2 (Example new fee protocol value for token1)
+Outputs: None
+Explanation: Sets the protocol fee for token0 and token1. Returns no outputs.
+
+## 10. swap
+Function: swap (Write Contract)
+Inputs:
+  - recipient: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example recipient address)
+  - zeroForOne: true (Example direction of the swap)
+  - amountSpecified: 1000000000000000000 (Example amount of token0 or token1 to swap)
+  - sqrtPriceLimitX96: 79228162514264337593543950336 (Example price limit in sqrtPriceX96 format)
+  - data: 0x (Example additional data)
+Outputs:
+  - amount0: 1000000000000000000 (Example amount of token0 swapped)
+  - amount1: -1000000000000000000 (Example amount of token1 swapped, negative for outflow)
+Explanation: Executes a swap between token0 and token1. Returns the amounts of token0 and token1 swapped.
+  Calculation Example:
+    - Amount of token0 swapped: 1,000,000,000,000,000,000 (1 ether)
+    - Amount of token1 swapped (outflow): -1,000,000,000,000,000,000 (-1 ether)
+
+## 11. Burn
+Event: Burn
+Inputs:
+  - owner: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example owner address)
+  - tickLower: -10000 (Example lower tick value)
+  - tickUpper: 10000 (Example upper tick value)
+  - amount: 500000000000000000 (Example amount of liquidity burned)
+  - amount0: 1000000000000000000 (Example amount of token0 burned)
+  - amount1: 2000000000000000000 (Example amount of token1 burned)
+Explanation: Emitted when liquidity is burned within the specified tick range.
+
+## 12. Collect
+Event: Collect
+Inputs:
+  - owner: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example owner address)
+  - recipient: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example recipient address)
+  - tickLower: -10000 (Example lower tick value)
+  - tickUpper: 10000 (Example upper tick value)
+  - amount0: 1000000000000000000 (Example amount of token0 collected)
+  - amount1: 2000000000000000000 (Example amount of token1 collected)
+Explanation: Emitted when fees are collected within the specified tick range.
+
+## 13. CollectProtocol
+Event: CollectProtocol
+Inputs:
+  - sender: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example sender address)
+  - recipient: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example recipient address)
+  - amount0: 1000000000000000000 (Example amount of token0 protocol fees collected)
+  - amount1: 2000000000000000000 (Example amount of token1 protocol fees collected)
+Explanation: Emitted when protocol fees are collected.
+
+## 14. Flash
+Event: Flash
+Inputs:
+  - sender: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example sender address)
+  - recipient: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example recipient address)
+  - amount0: 1000000000000000000 (Example amount of token0 flashed)
+  - amount1: 2000000000000000000 (Example amount of token1 flashed)
+  - paid0: 1000000000000000000 (Example amount of token0 paid as fee)
+  - paid1: 2000000000000000000 (Example amount of token1 paid as fee)
+Explanation: Emitted when a flash loan is executed.
+
+## 15. IncreaseObservationCardinalityNext
+Event: IncreaseObservationCardinalityNext
+Inputs:
+  - observationCardinalityNextOld: 50 (Previous observation cardinality)
+  - observationCardinalityNextNew: 100 (New observation cardinality)
+Explanation: Emitted when the observation cardinality is increased.
+
+## 16. Initialize
+Event: Initialize
+Inputs:
+  - sqrtPriceX96: 79228162514264337593543950336 (Example initial price in sqrtPriceX96 format)
+  - tick: 0 (Example initial tick value)
+Explanation: Emitted when the pool is initialized with the specified price and tick.
+
+## 17. Mint
+Event: Mint
+Inputs:
+  - sender: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example sender address)
+  - recipient: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example recipient address)
+  - tickLower: -10000 (Example lower tick value)
+  - tickUpper: 10000 (Example upper tick value)
+  - amount: 500000000000000000 (Example amount of liquidity minted)
+  - amount0: 1000000000000000000 (Example amount of token0 minted)
+  - amount1: 2000000000000000000 (Example amount of token1 minted)
+Explanation: Emitted when liquidity is minted within the specified tick range.
+
+## 18. SetFeeProtocol
+Event: SetFeeProtocol
+Inputs:
+  - feeProtocol0Old: 0 (Previous fee protocol value for token0)
+  - feeProtocol0New: 1 (New fee protocol value for token0)
+  - feeProtocol1Old: 0 (Previous fee protocol value for token1)
+  - feeProtocol1New: 2 (New fee protocol value for token1)
+Explanation: Emitted when the protocol fee is changed.
+
+## 19. Swap
+Event: Swap
+Inputs:
+  - sender: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example sender address)
+  - recipient: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example recipient address)
+  - zeroForOne: true (Example direction of the swap)
+  - amount0: 1000000000000000000 (Example amount of token0 swapped)
+  - amount1: -1000000000000000000 (Example amount of token1 swapped, negative for outflow)
+  - sqrtPriceX96: 79228162514264337593543950336 (Example price in sqrtPriceX96 format)
+  - liquidity: 1000000000000000000 (Example liquidity in the pool)
+Explanation: Emitted when a swap occurs between token0 and token1.
+
+
+## 20. factory
+Function: factory (Read Contract)
+Inputs: None
+Outputs:
+  - address: 0xabcdefabcdefabcdefabcdefabcdefabcdefabcdef (Example factory address)
+Explanation: Returns the address of the Uniswap V3 factory.
+
+## 21. fee
+Function: fee (Read Contract)
+Inputs: None
+Outputs:
+  - fee: 500 (Example fee amount)
+Explanation: Returns the current fee amount.
+
+## 22. feeGrowthGlobal0X128
+Function: feeGrowthGlobal0X128 (Read Contract)
+Inputs: None
+Outputs:
+  - feeGrowthGlobal0X128: 100000000000000000000000000000000 (Example fee growth for token0)
+Explanation: Returns the global fee growth for token0.
+
+## 23. feeGrowthGlobal1X128
+Function: feeGrowthGlobal1X128 (Read Contract)
+Inputs: None
+Outputs:
+  - feeGrowthGlobal1X128: 200000000000000000000000000000000 (Example fee growth for token1)
+Explanation: Returns the global fee growth for token1.
+
+## 24. liquidity
+Function: liquidity (Read Contract)
+Inputs: None
+Outputs:
+  - liquidity: 1000000000000000000 (Example liquidity value)
+Explanation: Returns the current liquidity of the pool.
+
+## 25. maxLiquidityPerTick
+Function: maxLiquidityPerTick (Read Contract)
+Inputs: None
+Outputs:
+  - maxLiquidityPerTick: 1000000000000000000 (Example maximum liquidity per tick)
+Explanation: Returns the maximum liquidity that can be held per tick.
+
+## 26. observations
+Function: observations (Read Contract)
+Inputs:
+  - index: 0 (Example index for the observation)
+Outputs:
+  - blockTimestamp: 1627545600 (Example block timestamp)
+  - tickCumulative: 1000000 (Example cumulative tick value)
+  - secondsPerLiquidityCumulativeX128: 100000000000000000000000000000000 (Example seconds per liquidity cumulative value)
+  - initialized: true (Observation initialization status)
+Explanation: Returns details of a specific observation.
+
+## 27. observe
+Function: observe (Read Contract)
+Inputs:
+  - secondsAgos: [60, 120, 180] (Example array of seconds ago)
+Outputs:
+  - tickCumulatives: [1000000, 2000000, 3000000] (Example tick cumulative values)
+  - secondsPerLiquidityCumulativeX128s: [100000000000000000000000000000000, 200000000000000000000000000000000, 300000000000000000000000000000000] (Example seconds per liquidity cumulative values)
+Explanation: Returns cumulative tick values and seconds per liquidity cumulative values for specified times in the past.
+
+## 28. positions
+Function: positions (Read Contract)
+Inputs:
+  - key: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d90abcdef1234567890abcdef (Example position key)
+Outputs:
+  - liquidity: 1000000000000000000 (Example liquidity value)
+  - feeGrowthInside0LastX128: 100000000000000000000000000000000 (Example fee growth inside for token0)
+  - feeGrowthInside1LastX128: 200000000000000000000000000000000 (Example fee growth inside for token1)
+  - tokensOwed0: 500000000000000000 (Example tokens owed for token0)
+  - tokensOwed1: 1000000000000000000 (Example tokens owed for token1)
+Explanation: Returns the details of a specific position.
+
+## 29. protocolFees
+Function: protocolFees (Read Contract)
+Inputs: None
+Outputs:
+  - token0: 500000000000000000 (Example protocol fees for token0)
+  - token1: 1000000000000000000 (Example protocol fees for token1)
+Explanation: Returns the accumulated protocol fees for token0 and token1.
+
+## 30. setFeeProtocol
+Function: setFeeProtocol (Write Contract)
+Inputs:
+  - feeProtocol0: 1 (Example fee protocol value for token0)
+  - feeProtocol1: 2 (Example fee protocol value for token1)
+Outputs: None
+Explanation: Sets the protocol fee values for token0 and token1.
+
+## 31. slot0
+Function: slot0 (Read Contract)
+Inputs: None
+Outputs:
+  - sqrtPriceX96: 79228162514264337593543950336 (Example price in sqrtPriceX96 format)
+  - tick: 0 (Example tick value)
+  - observationIndex: 1 (Example observation index)
+  - observationCardinality: 10 (Example observation cardinality)
+  - observationCardinalityNext: 20 (Example next observation cardinality)
+  - feeProtocol: 1 (Example fee protocol value)
+  - unlocked: true (Example unlock status)
+Explanation: Returns the current slot0 values, including price, tick, and observation details.
+
+## 32. snapshotCumulativesInside
+Function: snapshotCumulativesInside (Read Contract)
+Inputs:
+  - tickLower: -10000 (Example lower tick value)
+  - tickUpper: 10000 (Example upper tick value)
+Outputs:
+  - tickCumulativeInside: 1000000 (Example cumulative tick inside the range)
+  - secondsPerLiquidityInsideX128: 100000000000000000000000000000000 (Example seconds per liquidity inside cumulative value)
+  - secondsInside: 3600 (Example seconds inside the range)
+Explanation: Returns cumulative tick and liquidity values inside the specified tick range.
+
+## 33. swap
+Function: swap (Write Contract)
+Inputs:
+  - recipient: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example recipient address)
+  - zeroForOne: true (Example direction of the swap)
+  - amountSpecified: 1000000000000000000 (Example amount of token0 or token1 to swap)
+  - sqrtPriceLimitX96: 79228162514264337593543950336 (Example price limit in sqrtPriceX96 format)
+  - data: 0x (Example additional data)
+Outputs:
+  - amount0: 1000000000000000000 (Example amount of token0 swapped)
+  - amount1: -1000000000000000000 (Example amount of token1 swapped, negative for outflow)
+Explanation: Executes a swap between token0 and token1 with the specified amounts and price limit.
+
+## 34. tickBitmap
+Function: tickBitmap (Read Contract)
+Inputs:
+  - index: 0 (Example index for the tick bitmap)
+Outputs:
+  - bitmap: 1000000000000000000000000000000000000000000000000000000000000000 (Example bitmap value)
+Explanation: Returns the tick bitmap for the specified index.
+
+## 35. tickSpacing
+Function: tickSpacing (Read Contract)
+Inputs: None
+Outputs:
+  - tickSpacing: 60 (Example tick spacing value)
+Explanation: Returns the tick spacing of the pool.
+
+## 36. ticks
+Function: ticks (Read Contract)
+Inputs:
+  - tick: 0 (Example tick value)
+Outputs:
+  - liquidityGross: 1000000000000000000 (Example gross liquidity at the tick)
+  - liquidityNet: 500000000000000000 (Example net liquidity at the tick)
+  - feeGrowthOutside0X128: 100000000000000000000000000000000 (Example fee growth outside for token0)
+  - feeGrowthOutside1X128: 200000000000000000000000000000000 (Example fee growth outside for token1)
+  - tickCumulativeOutside: 1000000 (Example cumulative tick value outside the tick)
+  - secondsPerLiquidityOutsideX128: 100000000000000000000000000000000 (Example seconds per liquidity outside cumulative value)
+  - secondsOutside: 3600 (Example seconds outside the tick)
+  - initialized: true (Tick initialization status)
+Explanation: Returns details of a specific tick, including liquidity, fee growth, and cumulative values.
+
+## 37. token0
+Function: token0 (Read Contract)
+Inputs: None
+Outputs:
+  - token0: 0xabcdefabcdefabcdefabcdefabcdefabcdefabcdef (Example token0 address)
+Explanation: Returns the address of token0.
+
+## 38. token1
+Function: token1 (Read Contract)
+Inputs: None
+Outputs:
+  - token1: 0x7FAEE86E94Ce9A4E3F5a21d74e7Da308CbD7b08d (Example token1 address)
+Explanation: Returns the address of token1.
