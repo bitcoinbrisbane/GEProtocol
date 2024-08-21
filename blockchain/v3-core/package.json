@@ -31,7 +31,7 @@
     "@nomicfoundation/hardhat-ethers": "^3.0.6",
     "@nomicfoundation/hardhat-ignition": "^0.15.5",
     "@nomicfoundation/hardhat-ignition-ethers": "^0.15.5",
-    "@nomicfoundation/hardhat-verify": "^2.0.8",
+    "@nomicfoundation/hardhat-verify": "^2.0.9",
     "@nomicfoundation/ignition-core": "^0.15.5",
     "@types/chai": "4",
     "@types/mocha": "^10.0.7",
@@ -53,7 +53,11 @@
   "scripts": {
     "compile": "hardhat compile",
     "test": "hardhat test",
-    "hh:deploy:pool": "npx hardhat ignition deploy ignition/modules/UniswapV3PoolModule.ts --network sepolia"
+    "hh:deploy:pool": "npx hardhat ignition deploy ignition/modules/UniswapV3PoolModule.ts --network sepolia",
+    "hh:deploy:factory:local": "npx hardhat ignition deploy ignition/modules/UniswapV3FactoryModule.ts --network hardhat",
+    "hh:deploy:pool:local": "npx hardhat ignition deploy ignition/modules/UniswapV3PoolModule.ts --network hardhat",
+    "hh:deploy:tokena:local": "npx hardhat ignition deploy ignition/modules/TokenAModule.ts --network hardhat",
+    "hh:deploy:tokenb:local": "npx hardhat ignition deploy ignition/modules/TokenBModule.ts --network hardhat"
   },
   "dependencies": {
     "hardhat": "^2.22.6"

@@ -1,4 +1,4 @@
-
+import "@nomicfoundation/hardhat-ignition-ethers";
 
 export default {
   networks: {
