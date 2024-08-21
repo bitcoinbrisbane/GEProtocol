@@ -3,7 +3,15 @@ import "@nomicfoundation/hardhat-ignition-ethers";
 export default {
   networks: {
     hardhat: {
-      allowUnlimitedContractSize: false,
+      mining: {
+        mempool: {
+          order: "fifo",
+        },
+        auto: true,
+      },
+    },
+    localhost: {
+      url: 'http://127.0.0.1:8545',
     },
     mainnet: {
       url: `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,

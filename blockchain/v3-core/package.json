@@ -54,10 +54,10 @@
     "compile": "hardhat compile",
     "test": "hardhat test",
     "hh:deploy:pool": "npx hardhat ignition deploy ignition/modules/UniswapV3PoolModule.ts --network sepolia",
-    "hh:deploy:factory:local": "npx hardhat ignition deploy ignition/modules/UniswapV3FactoryModule.ts --network hardhat",
-    "hh:deploy:pool:local": "npx hardhat ignition deploy ignition/modules/UniswapV3PoolModule.ts --network hardhat",
-    "hh:deploy:tokena:local": "npx hardhat ignition deploy ignition/modules/TokenAModule.ts --network hardhat",
-    "hh:deploy:tokenb:local": "npx hardhat ignition deploy ignition/modules/TokenBModule.ts --network hardhat"
+    "hh:deploy:factory:local": "npx hardhat ignition deploy ignition/modules/UniswapV3FactoryModule.ts --network localhost",
+    "hh:deploy:pool:local": "npx hardhat ignition deploy ignition/modules/UniswapV3PoolModule.ts --network localhost",
+    "hh:deploy:tokena:local": "npx hardhat ignition deploy ignition/modules/TokenAModule.ts --network localhost",
+    "hh:deploy:tokenb:local": "npx hardhat ignition deploy ignition/modules/TokenBModule.ts --network localhost"
   },
   "dependencies": {
     "hardhat": "^2.22.6"
