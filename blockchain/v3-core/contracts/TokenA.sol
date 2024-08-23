@@ -3,7 +3,7 @@ pragma solidity >=0.6.0;
 
 import { IERC20 } from "./interfaces/IERC20.sol";
 
-contract TokenB is IERC20 {
+contract TokenA is IERC20 {
     mapping(address => uint256) private _balances;
     mapping(address => mapping(address => uint256)) private _allowances;
 
@@ -59,8 +59,8 @@ contract TokenB is IERC20 {
     }
 
     constructor() {
-        _name = "Token B";
-        _symbol = "TKB";
+        _name = "Token A";
+        _symbol = "TKA";
         _decimals = 18;
         _mint(msg.sender, 1000 * 10 ** _decimals);
     }

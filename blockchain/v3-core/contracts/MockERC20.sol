@@ -8,7 +8,7 @@ contract MockERC20 is IERC20 {
     mapping(address => mapping(address => uint256)) private _allowances;
 
     uint256 private _totalSupply;
-    uint256 private _decimals;
+    uint8 private _decimals;
     string private _name;
     string private _symbol;
 
@@ -41,7 +41,7 @@ contract MockERC20 is IERC20 {
      * {IERC20-balanceOf} and {IERC20-transfer}.
      */
     function decimals() public view override returns (uint8) {
-        return 18;
+        return _decimals;
     }
 
     /**
