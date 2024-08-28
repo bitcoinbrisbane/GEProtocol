@@ -62,6 +62,7 @@
     "hh:deploy:tokenb:local": "npx hardhat ignition deploy ignition/modules/TokenBModule.ts --network localhost"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "hardhat": "^2.22.9"
   }
 }
