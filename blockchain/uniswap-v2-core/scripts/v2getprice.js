@@ -58,6 +58,38 @@ const get_reserves_abi = [
   }
 ]
 
+const get_price0CumulativeLast_abi = [
+  {
+    "inputs": [],
+    "name": "price0CumulativeLast",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
+
+const get_price1CumulativeLast_abi = [
+  {
+    "inputs": [],
+    "name": "price1CumulativeLast",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
+
 // const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider)
 const factory = new ethers.Contract('0x22d06d680aBfE8638a2F2136656325Af518C3FD8', get_pair_abi, provider)
 const pair = new ethers.Contract('0x805C24890478BbCd82c8Ce2cF73d9cb00cC7715C', get_pair_abi, provider)
@@ -72,6 +104,17 @@ const getPrice = async () => {
   const pairContract = new ethers.Contract(pair, get_reserves_abi, provider)
   const reserves = await pairContract.getReserves()
   console.log(reserves)
+
+  const price0CumulativeLast = new ethers.Contract(pair, get_price0CumulativeLast_abi, provider)
+  const price1CumulativeLast = new ethers.Contract(pair, get_price1CumulativeLast_abi, provider)
+
+  const [ price0, price1 ] = await Promise.all([
+    price0CumulativeLast.price0CumulativeLast(),
+    price1CumulativeLast.price1CumulativeLast()
+  ])
+
+  console.log(price0.toString())
+  console.log(price1.toString())
 }
 
 getPrice()
