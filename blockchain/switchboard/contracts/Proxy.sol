@@ -4,8 +4,9 @@ pragma solidity ^0.8.0;
 import {ISwitchboard} from "@switchboard-xyz/on-demand-solidity/ISwitchboard.sol";
 import {Structs} from "@switchboard-xyz/on-demand-solidity/structs/Structs.sol";
 import {IPriceOracle} from "./IPriceOracle.sol";
+import {IPriceOracleSentinel} from "./IPriceOracleSentinel.sol";
 
-contract Proxy is IPriceOracle {
+contract Proxy is IPriceOracle, IPriceOracleSentinel {
     ISwitchboard switchboard;
 
     // Every Switchboard Feed has a unique feed ID derived from the OracleJob definition and Switchboard Queue ID.
@@ -76,5 +77,36 @@ contract Proxy is IPriceOracle {
         // This function is not implemented in this example
         // It would be used to set the price of an asset in the feed
         // This function is required by the IPriceOracle interface
+    }
+
+    function ADDRESSES_PROVIDER() external view returns (IPoolAddressesProvider) {
+
+    }
+
+
+    function isBorrowAllowed() external view returns (bool) {
+
+    }
+
+
+    function isLiquidationAllowed() external view returns (bool) {
+
+    }
+
+
+    function setSequencerOracle(address newSequencerOracle) external {
+
+    }
+
+    function setGracePeriod(uint256 newGracePeriod) external {
+
+    }
+
+    function getSequencerOracle() external view returns (address) {
+
+    }
+
+    function getGracePeriod() external view returns (uint256) {
+        
     }
 }
