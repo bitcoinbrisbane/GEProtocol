@@ -5,6 +5,7 @@ import {ISwitchboard} from "@switchboard-xyz/on-demand-solidity/ISwitchboard.sol
 import {Structs} from "@switchboard-xyz/on-demand-solidity/structs/Structs.sol";
 import {IPriceOracle} from "./IPriceOracle.sol";
 import {IPriceOracleSentinel} from "./IPriceOracleSentinel.sol";
+import {IPoolAddressesProvider} from './IPoolAddressesProvider.sol';
 
 contract Proxy is IPriceOracle, IPriceOracleSentinel {
     ISwitchboard private switchboard;
