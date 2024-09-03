@@ -28,5 +28,14 @@
   "dependencies": {
     "@switchboard-xyz/on-demand": "^1.2.27",
     "@switchboard-xyz/on-demand-solidity": "^0.0.4"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "typechain": "hardhat typechain",
+    "verify": "hardhat verify"
+  },
+  "engines": {
+    "node": "18.19.1"
   }
 }
