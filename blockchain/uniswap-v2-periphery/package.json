@@ -10,6 +10,7 @@
     "hh:compile": "hardhat compile",
     "hh:test": "hardhat test",
     "hh:node": "npx hardhat node",
+    "hh:deploy:mocktoken": "npx hardhat ignition deploy ./ignition/modules/MockERC20.ts --network sepolia --verify",
     "hh:deploy:tokena": "npx hardhat ignition deploy ./ignition/modules/TokenA.ts --network sepolia --verify",
     "hh:deploy:tokenb": "npx hardhat ignition deploy ./ignition/modules/TokenB.ts --network sepolia --verify",
     "hh:deploy:usdt": "npx hardhat ignition deploy ./ignition/modules/MockUSDT.ts --network hardhat",

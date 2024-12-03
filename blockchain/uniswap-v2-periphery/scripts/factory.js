@@ -20,6 +20,7 @@ const FACTORY = "0x22d06d680aBfE8638a2F2136656325Af518C3FD8";
 const factoryAbi = [
   "function allPairsLength() external view returns (uint256)",
   "function allPairs(uint256) external view returns (address)",
+  "function createPair(address tokenA, address tokenB) external returns (address)"
 ]
 
 const pairAbi = [
@@ -45,14 +46,6 @@ const network = 11155111;
 const provider = new JsonRpcProvider(url, network, {
   staticNetwork: network,
 });
-
-// const signer = new ethers.Wallet(private_key, provider);
-
-// // Your wallet private key
-// const privateKey = process.env.PRIVATE_KEY;
-
-// // Create a wallet instance
-// const wallet = new ethers.Wallet(privateKey, provider);
 
 // The amount you want to approve (as a BigNumber)
 const amount = ethers.BigNumber.from("1000000000000000000"); // 1 token with 18 decimals
@@ -100,9 +93,15 @@ const allPairs = async () => {
   console.table(pairs);
 };
 
-const createPair = async () => {
+const createPair = async (tokenA, tokenB) => {
+  // Your wallet private key
+  const privateKey = process.env.PRIVATE_KEY;
+
+  // Create a wallet instance
+  const wallet = new ethers.Wallet(privateKey, provider);
+
   const factory = new ethers.Contract(FACTORY, factoryAbi, wallet);
-  const tx = await factory.createPair(MOCK_USD_ADDRESS, MOCK_WBTC_ADDRESS);
+  const tx = await factory.createPair(tokenA, tokenB);
   console.log("Transaction hash:", tx.hash);
 }
 
@@ -113,4 +112,4 @@ const removeLiquidity = async () => {
 }
 
 allPairs();
-// createPair();
+// createPair("0x337CdBAc14AB233f947DA164078774e4e99F5C2D", "0x574084E6A21cD334277B79f35F98C0Aae24E0030");
