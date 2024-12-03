@@ -3,11 +3,6 @@
 /* eslint-disable */
 export * as mockUsdcSol from "./MockUSDC.sol";
 export * as interfaces from "./interfaces";
-export * as test from "./test";
 export { MockERC20__factory } from "./MockERC20__factory";
 export { MockUSDT__factory } from "./MockUSDT__factory";
 export { MockWeth__factory } from "./MockWeth__factory";
-export { MockwBTC__factory } from "./MockwBTC__factory";
-export { UniswapV2ERC20__factory } from "./UniswapV2ERC20__factory";
-export { UniswapV2Factory__factory } from "./UniswapV2Factory__factory";
-export { UniswapV2Pair__factory } from "./UniswapV2Pair__factory";

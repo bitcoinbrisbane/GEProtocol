@@ -27,6 +27,7 @@
     "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
     "@nomicfoundation/hardhat-verify": "^1.1.1",
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
     "@openzeppelin/contracts": "^4.3.2",
     "@types/bluebird": "^3.5.36",
     "@types/chai": "^4.2.21",
@@ -78,6 +79,8 @@
     "url": "git://github.com/aave/aave-v3-deploy"
   },
   "dependencies": {
-    "@openzeppelin/defender-relay-client": "^1.54.1"
+    "@openzeppelin/defender-relay-client": "^1.54.1",
+    "@switchboard-xyz/on-demand-solidity": "^0.0.4",
+    "ethers": "5.7"
   }
 }

@@ -54,29 +54,9 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.MockUSDT__factory>;
     getContractFactory(
-      name: "MockwBTC",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.MockwBTC__factory>;
-    getContractFactory(
       name: "MockWeth",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.MockWeth__factory>;
-    getContractFactory(
-      name: "ERC20",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ERC20__factory>;
-    getContractFactory(
-      name: "UniswapV2ERC20",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.UniswapV2ERC20__factory>;
-    getContractFactory(
-      name: "UniswapV2Factory",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.UniswapV2Factory__factory>;
-    getContractFactory(
-      name: "UniswapV2Pair",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.UniswapV2Pair__factory>;
 
     getContractAt(
       name: "IERC20",
@@ -129,35 +109,10 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.MockUSDT>;
     getContractAt(
-      name: "MockwBTC",
-      address: string | ethers.Addressable,
-      signer?: ethers.Signer
-    ): Promise<Contracts.MockwBTC>;
-    getContractAt(
       name: "MockWeth",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
     ): Promise<Contracts.MockWeth>;
-    getContractAt(
-      name: "ERC20",
-      address: string | ethers.Addressable,
-      signer?: ethers.Signer
-    ): Promise<Contracts.ERC20>;
-    getContractAt(
-      name: "UniswapV2ERC20",
-      address: string | ethers.Addressable,
-      signer?: ethers.Signer
-    ): Promise<Contracts.UniswapV2ERC20>;
-    getContractAt(
-      name: "UniswapV2Factory",
-      address: string | ethers.Addressable,
-      signer?: ethers.Signer
-    ): Promise<Contracts.UniswapV2Factory>;
-    getContractAt(
-      name: "UniswapV2Pair",
-      address: string | ethers.Addressable,
-      signer?: ethers.Signer
-    ): Promise<Contracts.UniswapV2Pair>;
 
     deployContract(
       name: "IERC20",
@@ -200,29 +155,9 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.MockUSDT>;
     deployContract(
-      name: "MockwBTC",
-      signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.MockwBTC>;
-    deployContract(
       name: "MockWeth",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.MockWeth>;
-    deployContract(
-      name: "ERC20",
-      signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.ERC20>;
-    deployContract(
-      name: "UniswapV2ERC20",
-      signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.UniswapV2ERC20>;
-    deployContract(
-      name: "UniswapV2Factory",
-      signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.UniswapV2Factory>;
-    deployContract(
-      name: "UniswapV2Pair",
-      signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.UniswapV2Pair>;
 
     deployContract(
       name: "IERC20",
@@ -275,35 +210,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.MockUSDT>;
     deployContract(
-      name: "MockwBTC",
-      args: any[],
-      signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.MockwBTC>;
-    deployContract(
       name: "MockWeth",
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.MockWeth>;
-    deployContract(
-      name: "ERC20",
-      args: any[],
-      signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.ERC20>;
-    deployContract(
-      name: "UniswapV2ERC20",
-      args: any[],
-      signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.UniswapV2ERC20>;
-    deployContract(
-      name: "UniswapV2Factory",
-      args: any[],
-      signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.UniswapV2Factory>;
-    deployContract(
-      name: "UniswapV2Pair",
-      args: any[],
-      signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.UniswapV2Pair>;
 
     // default types
     getContractFactory(
