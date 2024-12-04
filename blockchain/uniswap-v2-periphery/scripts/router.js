@@ -5,7 +5,7 @@ const { JsonRpcProvider } = require("@ethersproject/providers");
 
 require("dotenv").config();
 
-const private_key = "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80";
+const private_key = process.env.PRIVATE_KEY;
 const ROUTER_ADDRESS = "0xc6e7DF5E7b4f2A278906862b61205850344D4e7d";
 const MOCK_USD_ADDRESS = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512";
 const TOKEN_0_USD = "0x26a69c93Fbda73A5a46D79bdfCD282B947b741BE";
@@ -21,14 +21,13 @@ const provider = new JsonRpcProvider(url, network, {
   staticNetwork: network,
 });
 
-const signer = new ethers.Wallet(private_key, provider);
 const wallet = new ethers.Wallet(private_key, provider);
 
 const erc20Abi = [
   "function name() public view returns (string memory)",
   "function balanceOf(address account) external view returns (uint256)",
   "function approve(address spender, uint256 amount) external returns (bool)",
-  "function approval(address owner, address spender) external view returns (uint256)"
+  "function allowance(address owner, address spender) external view returns (uint256)"
 ];
 
 const amount = ethers.BigNumber.from("1000000000000000000");
@@ -61,27 +60,27 @@ const approveToken = async (address) => {
 };
 
 const addLiquidity = async (tokenAAddress, tokenBAddress, tokenAAmount) => {
-  const tokenA = new ethers.Contract(tokenAAddress, abi, wallet);
+  const tokenA = new ethers.Contract(tokenAAddress, erc20Abi, wallet);
   const aBalance = await tokenA.balanceOf(wallet.address);
   const nameA = await tokenA.name();
   console.log("A Balance:", aBalance.toString(), "Name:", nameA);
 
-  const tokenB = new ethers.Contract(tokenBAddress, abi, wallet);
+  const tokenB = new ethers.Contract(tokenBAddress, erc20Abi, wallet);
   const bBalance = await tokenB.balanceOf(wallet.address);
   const nameB = await tokenB.name();
   console.log("B Balance:", bBalance.toString(), "Name:", nameB);
 
   // do math
   const amountADesired = ethers.utils.parseUnits(tokenAAmount.toString()) // 10,000 DAI 18 decimals
-  const amountAMin = ethers.utils.parseUnits("99900");      // 9,900 DAI (99% of desired):
+  const amountAMin = ethers.utils.parseUnits("999");      // 9,900 DAI (99% of desired):
 
   // WBTC amount (Token B) - 0.10869565 BTC with 18 decimals
   // 0.10869565 * 10^18
-  const amountBDesired = ethers.BigNumber.from("108695650000000000"); // 0.10869565 BTC
-  const amountBMin = ethers.BigNumber.from("107608690000000000");     // 0.10760869 BTC (99% of desired)
+  const amountBDesired = ethers.BigNumber.from("1086956521739130"); // 0.10869565 BTC
+  const amountBMin = ethers.BigNumber.from("1076086956521739");     // 0.10760869 BTC (99% of desired)
 
   // Check approval of token a
-  const allowance = await tokenA.approval(wallet.address, ROUTER_ADDRESS);
+  const allowance = await tokenA.allowance(wallet.address, ROUTER_ADDRESS);
   console.log("Allowance:", allowance.toString());
 
   if (allowance.lt(tokenAAmount)) {
@@ -89,7 +88,7 @@ const addLiquidity = async (tokenAAddress, tokenBAddress, tokenAAmount) => {
   }
 
   // Check approval of token b
-  const allowanceB = await tokenB.approval(wallet.address, ROUTER_ADDRESS);
+  const allowanceB = await tokenB.allowance(wallet.address, ROUTER_ADDRESS);
   console.log("Allowance:", allowanceB.toString());
 
   if (allowanceB.lt(tokenAAmount)) {
@@ -112,8 +111,8 @@ const addLiquidity = async (tokenAAddress, tokenBAddress, tokenAAmount) => {
     return;
   }
 
-  const to = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266";
-  const deadline = 99999999999;
+  const to = wallet.address
+  const deadline = Math.floor(Date.now() / 1000) + 60 * 20; // 20 minutes from now
 
   const tx = await contract.addLiquidity(
     token0 = tokenAAddress,
@@ -129,9 +128,9 @@ const addLiquidity = async (tokenAAddress, tokenBAddress, tokenAAmount) => {
   console.log("Transaction hash:", tx.hash);
 
   const receipt = await tx.wait();
-  console.log("Transaction was mined in block:", receipt.blockNumber);
+  console.log("Transaction for add liquidity was mined in block:", receipt.blockNumber);
 };
 
 const dai = "0x337CdBAc14AB233f947DA164078774e4e99F5C2D";
 const wbtc = "0x574084E6A21cD334277B79f35F98C0Aae24E0030";
-addLiquidity(dai, wbtc, 100000);
+addLiquidity(dai, wbtc, 1000);
