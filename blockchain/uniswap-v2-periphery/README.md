@@ -2,8 +2,10 @@
 
 ## Run the factory script
 
+To get the factory and pairs that have been deployed, run the following command:
+
 ```bash
-npx hardhat run scripts/deploy-factory.js
+npx hardhat run scripts/factory.js
 ```
 
 Owner
