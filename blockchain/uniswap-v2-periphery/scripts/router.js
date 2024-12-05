@@ -255,15 +255,18 @@ const removeLiquidity = async (
     // Get current reserves using the previous checkPairLiquidity function
     const reserves = await checkPairLiquidity(pairAddress);
 
-    // Calculate minimum amounts with 5% slippage
-    const amountAMin = ethers.utils.parseUnits(
-      (parseFloat(reserves.token0.reserve) * share.mul(95).div(100) / ethers.constants.WeiPerEther).toString(),
-      18
-    );
-    const amountBMin = ethers.utils.parseUnits(
-      (parseFloat(reserves.token1.reserve) * share.mul(95).div(100) / ethers.constants.WeiPerEther).toString(),
-      18
-    );
+    // // Calculate minimum amounts with 5% slippage
+    // const amountAMin = ethers.utils.parseUnits(
+    //   (parseFloat(reserves.token0.reserve) * share.mul(95).div(100) / ethers.constants.WeiPerEther).toString(),
+    //   18
+    // );
+    // const amountBMin = ethers.utils.parseUnits(
+    //   (parseFloat(reserves.token1.reserve) * share.mul(95).div(100) / ethers.constants.WeiPerEther).toString(),
+    //   18
+    // );
+
+    const amountAMin = 0n;
+    const amountBMin = 0n;
 
     // Set deadline to 20 minutes from now
     const deadline = Math.floor(Date.now() / 1000) + 60 * 20;
