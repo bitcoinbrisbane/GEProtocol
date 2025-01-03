@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: uniswap_events_db
+    environment:
+      POSTGRES_USER: ${DB_USER:-uniswap_user}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-uniswap_password}
+      POSTGRES_DB: ${DB_NAME:-uniswap_events}
+      PGDATA: /data/postgres
+    volumes:
+      - postgres_data:/data/postgres
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-uniswap_user} -d ${DB_NAME:-uniswap_events}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - uniswap_network
+
+volumes:
+  postgres_data:
+    name: uniswap_postgres_data
+
+networks:
+  uniswap_network:
+    name: uniswap_network
+    driver: bridge

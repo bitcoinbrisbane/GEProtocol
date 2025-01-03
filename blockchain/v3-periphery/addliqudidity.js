@@ -1,8 +1,12 @@
 const { ethers } = require("ethers");
+
+const dotenv = require("dotenv");
+dotenv.config();
+
 //  USDC - ETH POOL UNISWAP V3 EXAMPLE
 // Configuration
-const RPC_URL = "https://1rpc.io/eth";
-const UNISWAP_POOL_ADDRESS = "0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640";
+const RPC_URL = process.env.HTTPS_PROVIDER;
+const UNISWAP_POOL_ADDRESS = "0xB7fD55f421908eb5b8F955d474B71fd95F2d6169"; // "0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640";
 const TOKEN_0_DECIMALS = 6; // USDC DECIMALS
 const TOKEN_1_DECIMALS = 18; // ETH DECIMALS
 const TOKEN_0_AMOUNT = ethers.parseUnits("1", TOKEN_0_DECIMALS);  // Amount of USDC to add
@@ -43,19 +47,18 @@ function sqrtPriceToTick(sqrtPriceX96) {
 }
 
 function getLiquidityFromAmount0(sqrtPriceX96Min, sqrtPriceX96Max, amount0) {
-    let intermidiate = (sqrtPriceX96Min * sqrtPriceX96Max) / (2 ** 96);
-    return Math.floor(amount0 * (intermidiate / (sqrtPriceX96Max - sqrtPriceX96Min)));
+    const intermediate = (sqrtPriceX96Min * sqrtPriceX96Max) / (2 ** 96);
+    return Math.floor(amount0 * (intermediate / (sqrtPriceX96Max - sqrtPriceX96Min)));
 }
-
 
 function getLiquidityFromSingleAmount0(sqrtPriceX96, sqrtPriceX96Min, sqrtPriceX96Max, amount0) {
     if (sqrtPriceX96 <= sqrtPriceX96Min) {
         return getLiquidityFromAmount0(sqrtPriceX96Min, sqrtPriceX96Max, amount0);
     } else if (sqrtPriceX96 < sqrtPriceX96Max) {
         return getLiquidityFromAmount0(sqrtPriceX96, sqrtPriceX96Max, amount0);
-    } else {
-        return 0;
     }
+
+    return 0;
 }
 
 function getSqrtPriceAtTick(tick) {
@@ -125,8 +128,6 @@ async function addLiquidityWithCalculatedAmounts() {
     let liquidityDelta = getLiquidityDelta(currentTick, tickLower, tickUpper, Number(sqrtPriceX96), sqrtPriceMin, sqrtPriceMax, liquidity);
     console.log("AMOUNT OF token 0 YOU WILL ADD : ", ethers.formatUnits(Math.floor(liquidityDelta[0]), TOKEN_0_DECIMALS));
     console.log("AMOUNT OF token 1 WILL ADD :", ethers.formatUnits(Math.floor(liquidityDelta[1]), TOKEN_1_DECIMALS));
-
-
 }
 
 addLiquidityWithCalculatedAmounts().catch(console.error);

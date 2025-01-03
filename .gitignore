@@ -3,3 +3,5 @@ blockchain/v3-periphery/.env
 blockchain/uniswap-v2-periphery/.env
 blockchain/uniswap-v2-periphery/.env
 blockchain/uniswap-v2-periphery/.env
+rebalancer/.env
+rebalancer/node_modules/
